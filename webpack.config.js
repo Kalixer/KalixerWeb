@@ -12,7 +12,13 @@ module.exports = {
     mode: 'development',
     resolve: {
         extensions: ['.js', '.jsx'],
-        alias: {}
+        alias: {
+            '@public': path.resolve(__dirname, '/public'),
+            '@routes': path.resolve(__dirname, '/src/routes'),
+            '@components': path.resolve(__dirname, '/src/components'),
+            '@containers': path.resolve(__dirname, '/src/containers'),
+            '@styles': path.resolve(__dirname, '/src/styles'),
+        }
     },
     module: {
         rules: [
