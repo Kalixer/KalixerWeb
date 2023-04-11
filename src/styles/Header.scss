@@ -1,0 +1,63 @@
+.header {
+    height: 8vh;
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    // border: red solid 1px;
+
+    font-weight: bold;
+
+    position: absolute;
+
+    color: white;
+
+    // overflow-x: hidden;
+}
+.name {
+    font-size: 2rem;
+    margin-left: 5vw;
+
+    font-family: monospace;
+    border-bottom: transparent 2px;
+}
+.name:hover {
+    color: blue;
+
+    cursor: pointer;
+
+    border-bottom: blue solid 2px;
+
+    // display: block;
+    // white-space: nowrap;
+    // border-right: 4px solid;
+    // width: 7ch;
+
+    // animation: typing 2s steps(7), blink .5s infinite step-end alternate;
+    // overflow: hidden;
+}
+
+// @keyframes typing {
+//     from { width: 0 }
+// }
+// @keyframes blink {
+//     50% { border-color: transparent }
+// }
+
+.nav-bar {
+    display: flex;
+    margin-right: 4rem;
+    
+}
+.nav-bar li {
+    margin: 1rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+.nav-bar li:hover {
+    cursor: pointer;
+    color: blue;
+}

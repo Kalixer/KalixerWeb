@@ -1,8 +1,15 @@
 import React from "react";
 
+import background from '@assets/background_laptop_cut.jpg'
+import '@styles/Home.scss';
+
+
 const Home = () => {
     return (
-        <h1>Hello React</h1>
+        <div className="home">
+            <img src={background} alt="" />
+            <h1>Hello there</h1>
+        </div>
     );
 }
 

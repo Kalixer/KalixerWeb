@@ -1,14 +1,18 @@
 import React from "react";
+import '@styles/Header.scss';
 
 const Header = () => {
     return (
-        <div className="Header">
-            <li>Home</li>
-            <ul>
-                <li>anime</li>
-                <li>books</li>
-                <li>hobbies</li>
-                <li>blog</li>
+        <div className="header">
+            <div className="name">
+                <p>Kalixer</p>
+            </div>
+            <ul className="nav-bar">
+                <li>About</li>
+                <li>Blog</li>
+                <li>Books</li>
+                <li>Portfolio</li>
+                <li>Contact</li>
             </ul>
         </div>
     );
