@@ -17,10 +17,10 @@ const Skills_Hobbies = () => {
 
 
     const hobbies = []
-    hobbies.push('Ocasional Drawer')
+    hobbies.push('Drawing')
     hobbies.push('Reading')
-    hobbies.push('Overthinker')
-    hobbies.push('Anime lover')
+    hobbies.push('Blog')
+    hobbies.push('')
 
     return (
         <div className="skills_hobbies">
