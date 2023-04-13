@@ -1,6 +1,5 @@
 import React from "react";
 import profile from '@assets/profile.jpeg';
-import read from '@assets/read.jpeg';
 import '@styles/About.scss';
 
 const About = () => {
@@ -11,10 +10,10 @@ const About = () => {
         Phone: '+569 499 7831',
         Experience: 'A few personal projects',
         Age: '22',
-        Afiliations: 'Grey Jedi',
+        Email: 'al.caceres.ag72@gmail.com',
         Studies: 'Platzi.com',
         English: 'B2 Level (medium)',
-        Skills: 'Front-End Developer'
+        MBTI: 'INTJ'
     }
     const kalixer_keys = Object.keys(kalixer);
     const kalixer_values = Object.values(kalixer);
@@ -50,7 +49,7 @@ const About = () => {
                             <p><strong>{kalixer_keys[3]}: </strong>{kalixer.Age}</p>
                         </div>
                         <div className="data_box">
-                            <p><strong>{kalixer_keys[4]}: </strong>{kalixer.Afiliations}</p>
+                            <p><strong>{kalixer_keys[4]}: </strong>{kalixer.Email}</p>
                         </div>
                         <div className="data_box">
                             <p><strong>{kalixer_keys[5]}: </strong>{kalixer.Studies}</p>
@@ -59,7 +58,7 @@ const About = () => {
                             <p><strong>{kalixer_keys[6]}: </strong>{kalixer.English}</p>
                         </div>
                         <div className="data_box">
-                            <p><strong>{kalixer_keys[7]}: </strong>{kalixer.Skills}</p>
+                            <p><strong>{kalixer_keys[7]}: </strong>{kalixer.MBTI}</p>
                         </div>
                     </div>
                     <div className="box">
