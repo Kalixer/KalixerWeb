@@ -13,14 +13,14 @@
 }
 img {
     z-index: -1;
-    opacity: 15;
-    filter: brightness(60%);
-    // filter: blur(2px);
+    filter: brightness(60%); 
+
+    position: fixed;
 
     height: 100%;
-    width: 100%;
+    width: 102%;
 }
-h1 {
+.welcome_message{
     position: absolute;
     margin-top: 20rem;
     font-size: 7rem;

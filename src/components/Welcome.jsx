@@ -7,7 +7,7 @@ const Welcome = () => {
     return (
         <div className="welcome">
             <img src={background} alt="" />
-            <h1>Hello there</h1>
+            <h1 className="welcome_message">Hello there</h1>
         </div>
     );
 }
