@@ -28,14 +28,6 @@ const Skills = () => {
                 <div className="sphere"></div>
                 <p>HTML5</p>
             </div>
-            <div className="skill">
-                <div className="sphere"></div>
-                <p>HTML5</p>
-            </div>
-            <div className="skill">
-                <div className="sphere"></div>
-                <p>HTML5</p>
-            </div>
         </div>
     );
 }

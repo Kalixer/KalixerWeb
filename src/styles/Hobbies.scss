@@ -1,9 +1,10 @@
 .hobbie_box {
-    border: solid 1px red;
-    height: 304px;
+    // border: solid 1px red;
+    height: 150px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
 }
 

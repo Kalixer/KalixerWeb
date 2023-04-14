@@ -1,11 +1,12 @@
 .skill_box {
-    border: solid 1px blue;
-    height: 304px;
+    // border: solid 1px blue;
+    height: 150px;
 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
 }
 .skill p{
     font-size: 2rem;
