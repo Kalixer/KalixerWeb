@@ -8,7 +8,7 @@ import '@styles/global.css'
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="/Kalixer">
             <Layout>
                 <Routes>
                     <Route exact path="/" element={<Home />} />
