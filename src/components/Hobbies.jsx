@@ -5,20 +5,28 @@ const Hobbies = () => {
     return (
         <div className="hobbie_box">
             <div className="skill">
-                <div className="sphere"></div>
-                <p>HTML5</p>
+                <div className="sphere">
+                    <img src="https://www.pngrepo.com/png/907/512/pencil.png"/>
+                </div>
+                <p>Ocacional Drawer</p>
             </div>
             <div className="skill">
-                <div className="sphere"></div>
-                <p>HTML5</p>
+                <div className="sphere">
+                    <img src="https://www.pngrepo.com/png/26848/180/book.png"/>
+                </div>
+                <p>Reading</p>
             </div>
             <div className="skill">
-                <div className="sphere"></div>
-                <p>HTML5</p>
+                <div className="sphere">
+                    <img src="https://www.pngrepo.com/png/109162/180/blog.png" />
+                </div>
+                <p>Blog</p>
             </div>
             <div className="skill">
-                <div className="sphere"></div>
-                <p>HTML5</p>
+                <div className="sphere">
+                    <img src="https://www.pngrepo.com/png/75533/180/brain.png" />
+                </div>
+                <p>Abstract Thinking</p>
             </div>
         </div>
     );

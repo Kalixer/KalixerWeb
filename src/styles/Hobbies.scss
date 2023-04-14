@@ -1,5 +1,4 @@
 .hobbie_box {
-    // border: solid 1px red;
     height: 150px;
     display: flex;
     flex-direction: row;
@@ -8,6 +7,17 @@
     flex-wrap: wrap;
 }
 
-// .hobbie_box .sphere {
-//     margin: 1rem 2rem 1rem 2rem;
-// }
+
+
+.hobbie_box .skill {
+    // border: solid 1px red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hobbie_box .skill img {
+    width: 100px;
+    height: 100px;
+}
