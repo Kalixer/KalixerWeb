@@ -8,6 +8,12 @@ const Footer = () => {
     const linkedId_icon = <img src="https://img.icons8.com/nolan/64/linkedin.png"/>
     const insta_icon = <img src="https://img.icons8.com/nolan/64/instagram-new.png"/>
 
+    const handleClickLinkedIn = () => {
+        window.open('https://www.linkedin.com/in/alejandro-c%C3%A1ceres-505204268', '_blank')
+    }
+    const handleClickInstagram = () => {
+        window.open('https://instagram.com/al.caceres72?igshid=ZDdkNTZiNTM=', '_blank')
+    }
 
     return (
         <div className="footer">
@@ -37,8 +43,12 @@ const Footer = () => {
                         <p>Social Media</p>
                     </div>
                     <div className="data data-content">
-                        <button type="button">{linkedId_icon}</button>
-                        <button type="button">{insta_icon}</button>
+                        <a href="#" onClick={handleClickLinkedIn}>
+                            <button>{linkedId_icon}</button>
+                        </a>
+                        <a href="#" onClick={handleClickInstagram}>
+                            <button type="button">{insta_icon}</button>
+                        </a>
                     </div>
                 </div>
             </div>
