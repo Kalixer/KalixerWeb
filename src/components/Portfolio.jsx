@@ -11,6 +11,12 @@ const Portfolio = () => {
     const html_draw_decription = `This is one of my first projects. I mean, this is one of the first things I learned when I started to learn to code. Here you can choose the colors you want to display and the website does the default drawing progressively.`
     const kalixtore_description = `Well, this is the proyect I made when I took the 'Practical NextJS course on Platzi. It's an E-commerce, but only the Front-End part. Now there's an problem with the API so the pictures doesn't load, but I'll work on it.`
 
+    const handleClickDiceRoller = () => { 
+        window.open('https://kalixer.github.io/Dice-roller/', '_blank') 
+    }
+    const handleClickHtmlDraw = () => { window.open('https://kalixer.github.io/Drawing-in-Html/', '_blank') }
+    const handleClickKalixtore = () => { window.open('https://www.kalixtore.us/', '_blank') }
+
     return (
         <div className="portfolio">
             <h1>Portfolio</h1>
@@ -18,9 +24,11 @@ const Portfolio = () => {
 
                 <div className="project">
                     <div className="title">
-                        <div className="parent-position">
-                            <p>Dice Roller</p>
-                        </div>
+                        <a href="#" onClick={handleClickDiceRoller}>
+                            <div className="parent-position">
+                                <p>Dice Roller</p>
+                            </div>
+                        </a>
                         <img src={dice_img} alt="" />
                     </div>
                     <div className="description">
@@ -30,9 +38,11 @@ const Portfolio = () => {
 
                 <div className="project">
                 <div className="title">
+                    <a href="#" onClick={handleClickHtmlDraw}>
                         <div className="parent-position">
                             <p>Html Draw</p>
                         </div>
+                    </a>
                         <img src={html_draw} alt="" />
                     </div>
                     <div className="description">
@@ -42,9 +52,11 @@ const Portfolio = () => {
                 
                 <div className="project">
                 <div className="title">
+                    <a href="#" onClick={handleClickKalixtore}>
                         <div className="parent-position">
                             <p>Kalixtore</p>
                         </div>
+                    </a>
                         <img src={kalixtore} alt="" />
                     </div>
                     <div className="description">
