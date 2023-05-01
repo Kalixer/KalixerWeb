@@ -43,21 +43,15 @@
 .data-title {
     border-bottom: grey solid 1px;
 }
-.data-content a:hover {
-    cursor: pointer;
-}
 
 .data img {
     height: 100%;
     margin: 0 1rem;
+    cursor: pointer;
 }
 
 button {
     height: 50px;
     background-color: transparent;
     border: none;
-}
-
-button:hover {
-    cursor: pointer;
 }
