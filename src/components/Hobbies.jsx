@@ -8,7 +8,7 @@ const Hobbies = () => {
                 <div className="sphere">
                     <img src="https://www.pngrepo.com/png/907/512/pencil.png"/>
                 </div>
-                <p>Ocacional Drawer</p>
+                <p>Drawing</p>
             </div>
             <div className="skill">
                 <div className="sphere">
