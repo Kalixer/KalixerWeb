@@ -10,7 +10,7 @@
 }
 
 .contacts {
-    border: solid 1px red;
+    // border: solid 1px red;
     height: 20vh;
     width: 95vw;
 
@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 .contact {
-    border: solid 1px blue;
+    // border: solid 1px blue;
     height: 100px;
     width: 250px;
 
@@ -29,13 +29,19 @@
 }
 
 .data {
-    border: solid 1px green;
+    // border: solid 1px green;
     height: 40px;
     width: 100%;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-weight: bold;
+}
+
+.data-title {
+    border-bottom: grey solid 1px;
 }
 
 .data img {
