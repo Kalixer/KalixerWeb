@@ -1,5 +1,5 @@
 import React from "react";
-// import Footer from "@components/Footer.jsx";
+import Footer from "@components/Footer.jsx";
 import Header from "@components/Header.jsx"
 
 const Layout = ({children}) => {
@@ -7,7 +7,7 @@ const Layout = ({children}) => {
         <div className="Layout">
             <Header />
             {children}
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     );
 }
