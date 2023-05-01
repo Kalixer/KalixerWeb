@@ -1,4 +1,50 @@
 .footer {
-    background-color: grey;
-    font-size: 5rem;
+    height: 25vh;
+    background-color: #13292A;
+    font-size: 1.6rem;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts {
+    border: solid 1px red;
+    height: 20vh;
+    width: 95vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact {
+    border: solid 1px blue;
+    height: 100px;
+    width: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.data {
+    border: solid 1px green;
+    height: 40px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data img {
+    height: 100%;
+    margin: 0 1rem;
+}
+
+button {
+    height: 100%;
+    background-color: transparent;
+    border: none;
 }
