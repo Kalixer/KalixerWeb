@@ -17,6 +17,10 @@
 
     // overflow-x: hidden;
 }
+.header:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
 .name {
     font-size: 2rem;
     margin-left: 5vw;
