@@ -1,3 +1,10 @@
+:root {
+    --taupe: #988780;
+    --white: #FFFFFF;
+    --teal: #13292A;
+    --cream: #E9DED9;
+}
+
 * {
     margin: 0;
     padding: 0;
