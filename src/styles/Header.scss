@@ -29,11 +29,11 @@
     border-bottom: transparent 2px;
 }
 .name:hover {
-    color: blue;
+    color: var(--taupe);
 
     cursor: pointer;
 
-    border-bottom: blue solid 2px;
+    border-bottom: var(--taupe) solid 2px;
 
     // display: block;
     // white-space: nowrap;
@@ -63,5 +63,5 @@
 }
 .nav-bar li:hover {
     cursor: pointer;
-    color: blue;
+    color: var(--taupe);
 }
