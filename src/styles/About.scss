@@ -54,10 +54,18 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.box .description {
+    margin-top: 0;
+}
+
 .ac_right .about_title {
     font-size: 3rem;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ac_right .description {
