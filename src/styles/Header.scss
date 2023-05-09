@@ -107,6 +107,10 @@
         width: 30px;
         border-radius: 10px;
     }
+    .contact-responsive:hover {
+        border-color: var(--taupe);
+        color: var(--taupe);
+    }
     .contact-responsive img{
         width: 100%;
         height: 100%;
