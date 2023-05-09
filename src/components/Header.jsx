@@ -4,11 +4,8 @@ import '@styles/Header.scss';
 const contact_white = <img src="https://img.icons8.com/small/32/FFFFFF/user.png"/>
 const contact_taupe = <img src="https://img.icons8.com/small/32/988780/user.png"/>
 
-const Header = () => {
-    let overContact = false; // This is for when you place the mouse over the contact icon
-    
+const Header = () => {    
     const [colorIcon, setcolorIcon] = useState(contact_white)
-
     const setTaupe = () => {
         setcolorIcon(contact_taupe)
     }
@@ -16,26 +13,64 @@ const Header = () => {
         setcolorIcon(contact_white)
     }
 
-    return (
-        <div className="header">
-            <button className="menu-responsive">
-                <div></div>
-                <div></div>
-                <div></div>
-            </button>
-            <div className="name">
-                <p>Kalixer</p>
-            </div>
-            <ul className="nav-bar">
-                <li>About</li>
-                <li>Blog</li>
-                <li>Books</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-            </ul>
+    // let menuStatus = false;
 
-            <div className="contact-responsive" onMouseOver={setTaupe} onMouseLeave={setWhite}>
-                {colorIcon}
+    const [headerSize, setheaderSize] = useState(`8vh`)
+    const [displayStatus, setdisplayStatus] = useState('none')
+
+    const toggleMenu = () => {
+
+        console.log(displayStatus)
+
+        if (displayStatus == 'none') {
+            setheaderSize(`100vh`)
+            setdisplayStatus('flex')
+        } else {
+            setheaderSize(`8vh`)
+            setdisplayStatus('none')
+        }
+    
+    }
+
+    return (
+        <div className="header" id="head"
+        style={{height: `${headerSize}`}}
+        >
+            <div className="top-section">
+                <button className="menu-responsive" 
+                onClick={toggleMenu}
+                >
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <div className="name">
+                    <p>Kalixer</p>
+                </div>
+                <ul className="nav-bar">
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Books</li>
+                    <li>Portfolio</li>
+                    <li>Contact</li>
+                </ul>
+
+                <div 
+                className="contact-responsive" 
+                onMouseOver={setTaupe} 
+                onMouseLeave={setWhite}
+                >
+                    {colorIcon}
+                </div>
+            </div>
+            <div className="bottom-section"
+            style={{display: `${displayStatus}`}}
+            >
+                <div className="bottom-nav-box">About</div>
+                <div className="bottom-nav-box">Blog</div>
+                <div className="bottom-nav-box">Books</div>
+                <div className="bottom-nav-box">Portfolio</div>
+                <div className="bottom-nav-box">Contact</div>
             </div>
         </div>
     );

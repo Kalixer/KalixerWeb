@@ -1,10 +1,10 @@
 .header {
-    height: 8vh;
+    // height: 48px;
     width: 100vw;
     
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 
     // border: red solid 1px;
@@ -17,7 +17,17 @@
 
     // overflow-x: hidden;
 }
-.header:hover {
+.top-section {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    // border: green solid 1px;
+}
+.header {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 1;
 }
@@ -56,15 +66,21 @@
     cursor: pointer;
     color: var(--taupe);
 }
+.bottom-section {
+    display: none;
+}
 
-@media(max-width:430px){
+
+
+@media(max-width:500px){
     .header{
-        justify-content: space-around;
+        justify-content: space-between;
     }
-    // .menu-responsive{
-    //     display: flex;
-    //     // border: white solid 1px;
-    // }
+    .top-section {
+        justify-content: space-around;
+        align-items: center;
+        margin: 8px;
+    }
     .menu-responsive{
         margin-top: 8px;
         display: flex;
@@ -74,6 +90,9 @@
         border: 0;
         background: transparent;
         gap: .65rem;
+    }
+    .menu-responsive:hover {
+        cursor: pointer;
     }
     .menu-responsive > div {
         background: white;
@@ -110,6 +129,7 @@
     .contact-responsive:hover {
         border-color: var(--taupe);
         color: var(--taupe);
+        cursor: pointer;
     }
     .contact-responsive img{
         width: 100%;
@@ -118,5 +138,34 @@
     }
     .nav-bar{
         display: none;
+    }
+    .bottom-section {
+        display: flex;
+        flex-direction: column;
+
+        // position: fixed;
+
+        // border: solid 1px blue;
+        width: 100%;
+        height: 500px;
+    }
+    .bottom-nav-box {
+        font-family: monospace;
+        font-weight: 500;
+        
+        // width: 100%;
+        height: 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.6rem;
+
+        margin: 2rem 0;
+        padding: 0 0 5px 0;
+    }
+    .bottom-nav-box:hover {
+        color: var(--taupe);
+        cursor: pointer;
     }
 }
