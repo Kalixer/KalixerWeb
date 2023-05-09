@@ -10,7 +10,7 @@ const About = () => {
         Phone: '+569 4993 7831',
         Experience: 'A few personal projects',
         Age: '22',
-        Email: 'al.caceres.ag72@gmail.com',
+        // Email: 'al.caceres.ag72@gmail.com',
         Studies: 'Platzi.com',
         English: 'B2 Level (medium)',
         MBTI: 'INTJ'
