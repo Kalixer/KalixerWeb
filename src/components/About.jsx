@@ -18,8 +18,8 @@ const About = () => {
     const kalixer_keys = Object.keys(kalixer);
     const kalixer_values = Object.values(kalixer);
 
-    console.log(kalixer_keys[0])
-    console.log(kalixer_values)
+    // console.log(kalixer_keys[0])
+    // console.log(kalixer_values)
 
 
     return (
