@@ -25,11 +25,14 @@ const About = () => {
     return (
         <div className="about">
             <div className="about_container">
+                    <div className="box about_title_responsive">
+                        <p>About me</p>
+                    </div>
                 <div className="ac_left">
                     <img src={profile} alt="" />
                 </div>
                 <div className="ac_right">
-                    <div className="box about_title">
+                    <div className="box about_title_desktop">
                         <p>About me</p>
                     </div>
                     <div className="box description">
@@ -61,7 +64,7 @@ const About = () => {
                             <p><strong>{kalixer_keys[7]}: </strong>{kalixer.MBTI}</p>
                         </div>
                     </div>
-                    <div className="box">
+                    <div className="box button">
                         <button type="button" className="button_cv">Downlod CV</button>
                     </div>
                 </div>
