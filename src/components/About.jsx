@@ -10,9 +10,9 @@ const About = () => {
         Phone: '+569 4993 7831',
         Experience: 'A few personal projects',
         Age: '22',
-        // Email: 'al.caceres.ag72@gmail.com',
+        GitHub: 'github.com/Kalixer',
         Studies: 'Platzi.com',
-        English: 'B2 Level (medium)',
+        English: 'B2 Level (Intermediate)',
         MBTI: 'INTJ'
     }
     const kalixer_keys = Object.keys(kalixer);
@@ -49,7 +49,7 @@ const About = () => {
                             <p><strong>{kalixer_keys[3]}: </strong>{kalixer.Age}</p>
                         </div>
                         <div className="data_box">
-                            <p><strong>{kalixer_keys[4]}: </strong>{kalixer.Email}</p>
+                            <p><strong>{kalixer_keys[4]}: </strong>{kalixer.GitHub}</p>
                         </div>
                         <div className="data_box">
                             <p><strong>{kalixer_keys[5]}: </strong>{kalixer.Studies}</p>
