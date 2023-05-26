@@ -25,19 +25,18 @@
 .welcome_message{
     position: absolute;
     margin-top: 20rem;
-    font-size: 7rem;
     color: white;
-
     filter: drop-shadow(2px 4px 6px black);
-
     display: block;
     font-family: monospace;
     white-space: nowrap;
+}
+.welcome_message h1 {
+    font-size: 7rem;
     border-right: 4px solid;
     width: 11ch;
-
-    animation: typing 2s steps(11), blink .5s infinite step-end alternate;
     overflow: hidden;
+    animation: typing 2s steps(11), blink .5s infinite step-end alternate;
 }
 
 @keyframes typing {
@@ -45,4 +44,16 @@
 }
 @keyframes blink {
     50% { border-color: transparent }
+}
+
+@media (max-width:430px) {
+    .welcome_message h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width:900px) {
+    .welcome_message h1 {
+        font-size: 7rem;
+    }
 }
