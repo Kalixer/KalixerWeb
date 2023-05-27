@@ -1,13 +1,14 @@
 .skills_hobbies {
-    height: 95vh;
+    height: auto;
 
     background-color: #E7DED9;
 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .skills_hobbies > div {
-    margin: 2rem;
+    margin: 2.5rem;
 }
 
 .skills_section {
@@ -25,3 +26,14 @@
     margin: 1.5rem
 }
 
+@media (max-width:410px) {
+    .skills_hobbies{
+        height: 122rem;
+    }
+}
+
+// @media (max-width:430px) {
+//     .skills_hobbies{
+//         height: auto;
+//     }
+// }

@@ -1,16 +1,24 @@
 .skill_box {
     // border: solid 1px blue;
-    height: 150px;
+    height: 15rem;
 
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 4rem;
+}
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .skill p{
     font-size: 2rem;
     font-weight: bold;
+    margin-top: 3rem;
 }
 .sphere{
     height: 100px;
@@ -31,3 +39,16 @@
     width: 120px;
     filter: drop-shadow(8px 8px 4px black)
 }
+
+@media (max-width:500px) {
+    .skill_box{
+        height: 40rem;
+        margin: 0 -30px;
+    }
+    .sphere img {
+        height: 120px;
+        width: 120px;
+        filter: drop-shadow(8px 8px 4px black)
+    }
+}
+
