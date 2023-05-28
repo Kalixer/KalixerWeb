@@ -17,8 +17,7 @@
     text-align: center;
 }
 .hobbies_section {
-    // border: red solid 1px;
-    // width: 36vw;
+    width: 95vw;
     text-align: center;
 }
 .title_section {
@@ -26,9 +25,14 @@
     margin: 1.5rem
 }
 
-@media (max-width:410px) {
+@media (max-width:430px) {
     .skills_hobbies{
-        height: 122rem;
+        height: 136rem;
+    }
+    .hobbies_section {
+        width: 85vw;
+        // border: red solid 1px;
+        margin: 0;
     }
 }
 

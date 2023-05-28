@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hobbies = () => {
     return (
-        <div className="skill_box hobbie_box">
+        <div className="skill_box">
             <div className="skill">
                 <div className="sphere">
                     <img src="https://www.pngrepo.com/png/907/512/pencil.png"/>
