@@ -25,6 +25,11 @@
     margin: 1.5rem
 }
 
+@media (max-width:900px) {
+    .skills_hobbies{
+        height: 80rem;
+    }
+}
 @media (max-width:430px) {
     .skills_hobbies{
         height: 136rem;
@@ -35,9 +40,3 @@
         margin: 0;
     }
 }
-
-// @media (max-width:430px) {
-//     .skills_hobbies{
-//         height: auto;
-//     }
-// }
