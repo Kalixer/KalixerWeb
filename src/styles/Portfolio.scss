@@ -1,5 +1,5 @@
 .portfolio {
-    height: 90vh;
+    height: 80vh;
     background-color: var(--taupe);
 
     display: flex;
@@ -31,8 +31,8 @@
     border: solid 1px black;
     border-radius: 25px;
 
-    height: 350px;
-    width: 200px;
+    height: 360px;
+    width: 220px;
 
     display: flex;
     flex-direction: column;
@@ -82,8 +82,50 @@
     font-size: 1.6rem;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: black;
+}
+.description p {
+    padding: 16px
+}
+
+@media (max-width: 800px) {
+    .portfolio {
+        height: 85rem;
+    }
+    .projects {
+        height: 50rem;
+    }
+    .project {
+        height: 45rem;
+        width: 20rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .portfolio {
+        height: 180rem;
+    }
+    .projects {
+        flex-direction: column;
+        height: 200rem;
+    }
+    .project {
+        width: 28rem;
+        height: 50rem;
+    }
+    .projects .description {
+        height: 55%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .description p {
+        font-size: 2rem;
+    }
 }
