@@ -140,11 +140,15 @@
         font-weight: bold;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
+    .ac_left img {
+        width: 87%;
+    }
     .ac_right .about_title_desktop {
         display: none;
     }
     .ac_right {
         width: 100vw;
+        margin-left: 0;
     }
     .ac_right .box {
         height: auto;
