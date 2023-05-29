@@ -16,10 +16,10 @@ const About = () => {
         MBTI: 'INTJ'
     }
     const kalixer_keys = Object.keys(kalixer);
-    const kalixer_values = Object.values(kalixer);
-
-    // console.log(kalixer_keys[0])
-    // console.log(kalixer_values)
+    
+    const handleCV = () => {
+        window.open('https://drive.google.com/file/d/1vVRr_U9Kr4Z10HAFGiMqi_-x_ofxPlWY/view?usp=drive_link', '_blank')
+    }
 
 
     return (
@@ -65,7 +65,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="box button">
-                        <button type="button" className="button_cv">Downlod CV</button>
+                        <button type="button" className="button_cv" onClick={handleCV}>Downlod CV</button>
                     </div>
                 </div>
             </div>
