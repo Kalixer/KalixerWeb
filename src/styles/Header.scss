@@ -74,7 +74,7 @@
 
 @media(max-width:500px){
     .header{
-        justify-content: space-between;
+        justify-content: start;
     }
     .top-section {
         justify-content: space-around;
@@ -82,7 +82,7 @@
         margin: 8px;
     }
     .menu-responsive{
-        margin-top: 8px;
+        margin-top: 16px;
         display: flex;
         flex-direction: column;
         width: 3rem;
@@ -158,7 +158,7 @@
         align-items: center;
         font-size: 2.6rem;
 
-        margin: 2rem 0;
+        margin: 3.2rem 0;
         padding: 0 0 5px 0;
     }
     .bottom-nav-box:hover {
