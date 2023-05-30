@@ -9,7 +9,7 @@ const Portfolio = () => {
 
     const dice_description = `I love board games. Who doesn't? Here you can choose how many dices do you want to throw and, if you choose the 'Role' dices, you can choose how many sides you want them to have. You also can change the language if you want (only English and Spanish available for now).`
     const html_draw_decription = `This is one of my first projects. I mean, this is one of the first things I learned when I started to learn to code. Here you can choose the colors you want to display and the website does the default drawing progressively.`
-    const kalixtore_description = `Well, this is the proyect I made when I took the 'Practical NextJS course on Platzi. It's an E-commerce, but only the Front-End part. Now there's an problem with the API so the pictures doesn't load, but I'll work on it.`
+    const kalixtore_description = `Kalixtore is an E-commerce proyect I made when I took the 'Practical NextJS course on Platzi. I used an API provided by the platform that made the course`
 
     const handleClickDiceRoller = () => { 
         window.open('https://kalixer.github.io/Dice-roller/', '_blank') 
