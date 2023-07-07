@@ -32,6 +32,10 @@ const Header = () => {
     
     }
 
+    const handleAbout = () => {
+        window.location.href = '/about'
+    }
+
     return (
         <div className="header" id="head"
         style={{height: `${headerSize}`}}
@@ -48,7 +52,7 @@ const Header = () => {
                     <p>Kalixer</p>
                 </div>
                 <ul className="nav-bar">
-                    <li>About</li>
+                    <li onClick={handleAbout}>About</li>
                     <li>Blog</li>
                     <li>Books</li>
                     <li>Portfolio</li>
