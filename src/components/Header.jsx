@@ -32,6 +32,9 @@ const Header = () => {
     
     }
 
+    const handleKalixer = () => {
+        window.location.href = '/'
+    }
     const handleAbout = () => {
         window.location.href = '/about'
     }
@@ -48,7 +51,7 @@ const Header = () => {
                     <div></div>
                     <div></div>
                 </button>
-                <div className="name">
+                <div className="name" onClick={handleKalixer}>
                     <p>Kalixer</p>
                 </div>
                 <ul className="nav-bar">
