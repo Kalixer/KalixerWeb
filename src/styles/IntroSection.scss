@@ -1,10 +1,18 @@
 .IntroSection {
-    background-color: azure;
-
     display: flex;
     justify-content: center;
     align-items: center;
+
+    // height: 200px;
+    width: 100vw;
+
+    position: absolute;
+    z-index: -1;
 }
-.IntroSection h1 {
-    font-size: large;
+.IntroImagen {
+    filter: brightness(40%);
+    height: 100%;
+}
+.IntroImagen img {
+    object-fit: cover;
 }

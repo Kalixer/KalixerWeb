@@ -1,9 +1,13 @@
 import React from 'react';
+import '@styles/IntroSection.scss';
+import fondo from '@assets/background_laptop_cut.jpg'
 
 const IntroSection = () => {
     return (
         <div className='IntroSection'>
-            <h1>Hello Intro Section</h1>
+            <figure className='IntroImagen'>
+                <img src={fondo} alt="" />
+            </figure>
         </div>
     )
 }

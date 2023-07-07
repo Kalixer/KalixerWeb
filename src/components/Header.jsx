@@ -38,6 +38,15 @@ const Header = () => {
     const handleAbout = () => {
         window.location.href = '/about'
     }
+    const handleBlog = () => {
+        window.location.href = '/blog'
+    }
+    const handleBooks = () => {
+        window.location.href = '/books'
+    }
+    const handlePortfolio = () => {
+        window.location.href = '/portfolio'
+    }
 
     return (
         <div className="header" id="head"
@@ -56,9 +65,9 @@ const Header = () => {
                 </div>
                 <ul className="nav-bar">
                     <li onClick={handleAbout}>About</li>
-                    <li>Blog</li>
-                    <li>Books</li>
-                    <li>Portfolio</li>
+                    <li onClick={handleBlog}>Blog</li>
+                    <li onClick={handleBooks}>Books</li>
+                    <li onClick={handlePortfolio}>Portfolio</li>
                     <li>Contact</li>
                 </ul>
 
