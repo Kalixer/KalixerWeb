@@ -10,8 +10,9 @@ const BlogPage = () => {
         <div className='BlogPage'>
             <IntroSection/>
             <div className='title'>
-                <h1>Hello About</h1>
+                <h1>Hello Blog</h1>
                 <p>{blogDescription}</p>
+                <p>Or at least trying to</p>
             </div>
             <section className='content'></section>
         </div>
