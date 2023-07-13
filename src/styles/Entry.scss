@@ -1,5 +1,6 @@
 .Entry {
-    border: solid 1px purple;
+    border: solid 1px rgb(180, 180, 180);
+    border-radius: 10px;
     height: 400px;
     width: 270px;
 
@@ -12,18 +13,34 @@
     height: 40%;
     width: 100%;
 
-    border: solid 1px black;
+    // border: solid 1px black;s
     
     display: flex;
-    // align-items: center;
     justify-content: center;
+
 }
 .Entry .imagen img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 5px;
 }
 .Entry .entry-content {
     height: 60%;
-    border: solid 1px orange;
+    // border: solid 1px orange;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.Entry .entry-content h1 {
+    font-size: 2.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.8rem;
+}
+.Entry .entry-content p {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    font-size: 1.6rem;
 }
