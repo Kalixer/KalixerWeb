@@ -1,5 +1,6 @@
 import React from 'react';
 import IntroSection from '@components/IntroSection';
+import BlogEntries from '@components/BlogEntries';
 
 import '@styles/BlogPage.scss';
 
@@ -42,21 +43,7 @@ const BlogPage = () => {
                         {introExp5}
                     </p>
                 </div>
-                <div className='entries-section'>
-                    <h1>Entries</h1>
-                    <div className='entries'>
-                        <div className='entrie-by-three'>
-                            <div className='entrie'></div>
-                            <div className='entrie'></div>
-                            <div className='entrie'></div>
-                        </div>
-                        <div className='entrie-by-three'>
-                            <div className='entrie'></div>
-                            <div className='entrie'></div>
-                            <div className='entrie'></div>
-                        </div>
-                    </div>
-                </div>
+                <BlogEntries/>
             </section>
         </div>
     )   
