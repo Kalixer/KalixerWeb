@@ -1,8 +1,8 @@
 .Entry {
     border: solid 1px rgb(180, 180, 180);
     border-radius: 10px;
-    height: 400px;
-    width: 270px;
+    height: 430px;
+    width: 320px;
 
     margin: 2rem;
 
@@ -10,7 +10,7 @@
     flex-direction: column;
 }
 .Entry .imagen{
-    height: 40%;
+    height: 45%;
     width: 100%;
 
     // border: solid 1px black;s
@@ -26,7 +26,7 @@
     border-radius: 5px;
 }
 .Entry .entry-content {
-    height: 60%;
+    height: 55%;
     // border: solid 1px orange;
 
     display: flex;
