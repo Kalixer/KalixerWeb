@@ -1,0 +1,29 @@
+.Entry {
+    border: solid 1px purple;
+    height: 400px;
+    width: 270px;
+
+    margin: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+.Entry .imagen{
+    height: 40%;
+    width: 100%;
+
+    border: solid 1px black;
+    
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+}
+.Entry .imagen img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.Entry .entry-content {
+    height: 60%;
+    border: solid 1px orange;
+}
