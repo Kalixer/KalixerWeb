@@ -18,11 +18,11 @@ const App = () => {
         <BrowserRouter basename="/Kalixer">
             <Layout>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<AboutPage />} />
-                    <Route path="/blog" element={<BlogPage/>} />
-                    <Route path="/books" element={<BooksPage/>} />
-                    <Route path="/portfolio" element={<PortfolioPage/>} />
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/about" element={<AboutPage />} />
+                    <Route exact path="/blog" element={<BlogPage/>} />
+                    <Route exact path="/books" element={<BooksPage/>} />
+                    <Route exact path="/portfolio" element={<PortfolioPage/>} />
 					<Route path="*" element={<NotFound/>} />
                 </Routes>
             </Layout>
