@@ -14,8 +14,8 @@ import '@styles/global.css'
 
 const App = () => {
     return (
-        // <BrowserRouter>
-        <BrowserRouter basename="/Kalixer/">
+        // <BrowserRouter basename="/Kalixer/">
+            <BrowserRouter>
             <Layout>
                 <Routes>
                     <Route exact path="/" element={<Home />} />
