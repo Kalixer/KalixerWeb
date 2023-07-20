@@ -21,25 +21,25 @@ import '@styles/global.css'
 const App = () => {
     return (
         // <BrowserRouter>
-        <BrowserRouter basename="/Kalixer">
+        <BrowserRouter>
             <Layout>
                 <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route exact path="/about" element={<AboutPage />} />
-                    <Route exact path="/blog" element={<BlogPage/>} />
-                    <Route exact path="/blog-test" element={<BlogTest/>} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<AboutPage />} />
+                    <Route path="/blog" element={<BlogPage/>} />
+                    <Route path="/blog-test" element={<BlogTest/>} />
 
                     {/* These are the blogs */}
-                    <Route exact path="/blog1" element={<Blog1 />} />
-                    <Route exact path="/blog2" element={<Blog2 />} />
-                    <Route exact path="/blog3" element={<Blog3 />} />
-                    <Route exact path="/blog4" element={<Blog4 />} />
-                    <Route exact path="/blog5" element={<Blog5 />} />
-                    <Route exact path="/blog6" element={<Blog6 />} />
+                    <Route path="/blog1" element={<Blog1 />} />
+                    <Route path="/blog2" element={<Blog2 />} />
+                    <Route path="/blog3" element={<Blog3 />} />
+                    <Route path="/blog4" element={<Blog4 />} />
+                    <Route path="/blog5" element={<Blog5 />} />
+                    <Route path="/blog6" element={<Blog6 />} />
                     {/* These are the blogs */}
 
-                    <Route exact path="/books" element={<BooksPage/>} />
-                    <Route exact path="/portfolio" element={<PortfolioPage/>} />
+                    <Route path="/books" element={<BooksPage/>} />
+                    <Route path="/portfolio" element={<PortfolioPage/>} />
 					<Route path="*" element={<NotFound/>} />
                 </Routes>
             </Layout>
