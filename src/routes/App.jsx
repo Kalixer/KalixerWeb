@@ -20,7 +20,6 @@ import '@styles/global.css'
 
 const App = () => {
     return (
-        // <BrowserRouter>
         <BrowserRouter>
             <Layout>
                 <Routes>
