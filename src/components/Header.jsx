@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import '@styles/Header.scss';
 
 const contact_white = <img src="https://img.icons8.com/small/32/FFFFFF/user.png"/>
@@ -65,7 +66,7 @@ const Header = () => {
                 </div>
                 <ul className="nav-bar">
                     <li onClick={handleAbout}>About</li>
-                    <li onClick={handleBlog}>Blog</li>
+                    <li><Link to='/blog'>Blog</Link></li>
                     <li onClick={handleBooks}>Books</li>
                     <li onClick={handlePortfolio}>Portfolio</li>
                     <li>Contact</li>
