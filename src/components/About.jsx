@@ -3,7 +3,7 @@ import profile from '@assets/profile.jpeg';
 import '@styles/About.scss';
 
 const About = () => {
-    const about_me = `My name is Alejandro Cáceres. I'm a student at Platzi.com. I have made a Front-End projects to test, and increase my knowledge. I speak Spanish natively and English at a B2 Level. I'm a TouchTyper and I currently write at 60wpm. In the topic of hobbies, I like to read books, draw and think in abstract matters.`;
+    const about_me = `My name is Alejandro Cáceres. I'm a student at Platzi.com. I make Front-End projects to test, and increase my knowledge. I speak Spanish natively and English at a B2 Level. I'm a TouchTyper and I currently write at 60-70wpm. In the topic of hobbies, I like to read books, draw and think in abstract subjects.`;
 
     const kalixer = {
         Name: 'Alejandro Cáceres',
