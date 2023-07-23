@@ -15,6 +15,7 @@ import Blog5 from "@blogs/Blog5";
 import Blog6 from "@blogs/Blog6";
 
 import BlogTest from "@pages/BlogTest";
+import InDevelopment from "@pages/InDevelopment";
 
 import '@styles/global.css'
 
@@ -25,22 +26,25 @@ const App = () => {
             <Layout>
                 <Routes>
                     <Route exact path="/" element={<Home />} />
-                    <Route exact path="/about" element={<AboutPage />} />
-                    <Route exact path="/blog" element={<BlogPage/>} />
-                    <Route exact path="/blog-test" element={<BlogTest/>} />
+                    <Route exact path="/about" element={<InDevelopment />} />
+                    <Route exact path="/blog" element={<InDevelopment/>} />
+                    <Route exact path="/blog-test" element={<InDevelopment/>} />
+
+                    {/* experimental */}
+                    <Route exact path="/dev" element={<InDevelopment/>}/>
 
                     {/* These are the blogs */}
-                    <Route exact path="/blog1" element={<Blog1 />} />
-                    <Route exact path="/blog2" element={<Blog2 />} />
-                    <Route exact path="/blog3" element={<Blog3 />} />
-                    <Route exact path="/blog4" element={<Blog4 />} />
-                    <Route exact path="/blog5" element={<Blog5 />} />
-                    <Route exact path="/blog6" element={<Blog6 />} />
+                    <Route exact path="/blog1" element={<InDevelopment />} />
+                    <Route exact path="/blog2" element={<InDevelopment />} />
+                    <Route exact path="/blog3" element={<InDevelopment />} />
+                    <Route exact path="/blog4" element={<InDevelopment />} />
+                    <Route exact path="/blog5" element={<InDevelopment />} />
+                    <Route exact path="/blog6" element={<InDevelopment />} />
                     {/* These are the blogs */}
 
-                    <Route exact path="/books" element={<BooksPage/>} />
-                    <Route exact path="/portfolio" element={<PortfolioPage/>} />
-					<Route path="*" element={<NotFound/>} />
+                    <Route exact path="/books" element={<InDevelopment/>} />
+                    <Route exact path="/portfolio" element={<InDevelopment/>} />
+					<Route path="*" element={<InDevelopment/>} />
                 </Routes>
             </Layout>
         </BrowserRouter>
