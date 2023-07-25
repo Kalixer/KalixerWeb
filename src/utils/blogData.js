@@ -1,32 +1,32 @@
 const blogData = [
     {
-        title: 'Rogue One',
-        image: 'https://i.blogs.es/5779df/rogue-one/450_1000.jpg',
+        title: 'Blog One',
+        image: 'https://images.pexels.com/photos/54101/magic-cube-cube-puzzle-play-54101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         link: 'blog1',
     },
     {
-        title: 'Obi-Two',
-        image: 'https://i.kym-cdn.com/entries/icons/original/000/029/079/hellothere.jpg',
+        title: 'Blog Two',
+        image: 'https://images.pexels.com/photos/2085832/pexels-photo-2085832.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         link: 'blog2',
     },
     {
-        title: 'Tee Three',
-        image: 'https://i.pinimg.com/originals/13/bb/12/13bb1257e16d4f35052deed2a84b3db2.gif',
+        title: 'Blog 3',
+        image: 'https://images.pexels.com/photos/159752/pencil-office-design-creative-159752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         link: 'blog3',
     },
     {
-        title: 'R4',
-        image: 'https://lumiere-a.akamaihd.net/v1/images/r4-p17_19602f62.jpeg',
+        title: 'Blog 4',
+        image: 'https://images.pexels.com/photos/2457183/pexels-photo-2457183.jpeg',
         link: 'blog4',
     },
     {
-        title: `CT-5555 'Fives'`,
-        image: 'https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/09/star-wars-cincos-2068741.jpg?tf=3840x',
+        title: `Blog 5`,
+        image: 'https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         link: 'blog5',
     },
     {
-        title: `CT-7567 'Rex`,
-        image: 'https://images.squarespace-cdn.com/content/v1/5fbc4a62c2150e62cfcb09aa/1653207588484-KO269G2WZQSZ3IN95ZT8/Captain-Rex.jpg',
+        title: `Blog 6`,
+        image: 'https://images.pexels.com/photos/17223074/pexels-photo-17223074/free-photo-of-drone-shot-of-river-in-mountains.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
         link: 'blog6',
     },
 ];
