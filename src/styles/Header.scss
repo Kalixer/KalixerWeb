@@ -37,14 +37,18 @@
 .contact-responsive{ // This one too
     display: none;
 }
-.name {
+.header .name{
     font-size: 2rem;
     margin-left: 5vw;
 
     font-family: monospace;
     border-bottom: transparent 2px;
 }
-.name:hover {
+.header .name a{
+    color: white;
+    text-decoration: none;
+}
+.name:hover a{
     color: var(--taupe);
 
     cursor: pointer;
@@ -62,7 +66,11 @@
     list-style: none;
     font-size: 1.5rem;
 }
-.nav-bar li:hover {
+.header .nav-bar a {
+    text-decoration: none;
+    color: white;
+}
+.nav-bar li a:hover {
     cursor: pointer;
     color: var(--taupe);
 }
