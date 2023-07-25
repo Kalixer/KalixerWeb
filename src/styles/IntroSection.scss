@@ -8,14 +8,14 @@
 
     position: absolute;
     z-index: -1;
-    height: 50vh;
+    height: 80vh;
 }
 .IntroImagen {
     filter: brightness(40%);
-    height: 50vh;
+    height: 80vh;
 }
 .IntroImagen img {
     object-fit: cover;
-    height: 60vh;
+    height: 100%;
     width: 100vw;
 }
