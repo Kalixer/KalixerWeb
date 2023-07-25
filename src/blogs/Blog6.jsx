@@ -16,7 +16,7 @@ const Blog6 = () => {
                 <img src={blogData[5].image} alt="" />
             </figure>
             <div className='Title'>
-                <h1>Title {blogData[5].title}</h1>
+                <h1>{blogData[5].title}</h1>
             </div>
             <div className='blog-content'>
                 <p>{text1}</p>
