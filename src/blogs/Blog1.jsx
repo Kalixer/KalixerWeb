@@ -26,7 +26,7 @@ const Blog1 = () => {
                 <p>{text1}</p>
                 <p>{text1}</p>
             </div>
-            <MoreRead/>
+            <MoreRead current={0}/>
         </div>
     )
 }
