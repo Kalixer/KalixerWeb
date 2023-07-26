@@ -67,10 +67,10 @@ const Header = () => {
             <div className="bottom-section"
             style={{display: `${displayStatus}`}}
             >
-                <div className="bottom-nav-box">About</div>
-                <div className="bottom-nav-box">Blog</div>
-                <div className="bottom-nav-box">Books</div>
-                <div className="bottom-nav-box">Portfolio</div>
+                <div className="bottom-nav-box"><Link to='/about'>About</Link></div>
+                <div className="bottom-nav-box"><Link to='/blog'>Blog</Link></div>
+                <div className="bottom-nav-box"><Link to='/books'>Books</Link></div>
+                <div className="bottom-nav-box"><Link to ='/portfolio'>Portfolio</Link></div>
                 <div className="bottom-nav-box">Contact</div>
             </div>
         </div>
