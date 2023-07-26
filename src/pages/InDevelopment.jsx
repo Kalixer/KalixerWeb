@@ -8,7 +8,8 @@ const InDevelopment = () => {
     
     const imagen = blogData[0].image
     
-    const pink_build = 'https://m.media-amazon.com/images/M/MV5BMjUwNTQ4Y2ItZjkxMi00YTc4LWJkMzktNDFmNTg4NWZmOGQyXkEyXkFqcGdeQXVyMTI0OTg2ODIx._V1_.jpg'
+    // const pink_build = 'https://m.media-amazon.com/images/M/MV5BMjUwNTQ4Y2ItZjkxMi00YTc4LWJkMzktNDFmNTg4NWZmOGQyXkEyXkFqcGdeQXVyMTI0OTg2ODIx._V1_.jpg'
+    const pink_build = 'https://i.pinimg.com/564x/07/5d/a5/075da577808faded2e854f7831e03a0f.jpg'
 
     return (
         <>
