@@ -26,24 +26,24 @@ const App = () => {
                 <Routes>
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/about" element={<InDevelopment />} />
-                    <Route exact path="/blog" element={<InDevelopment/>} />
-                    <Route exact path="/blog-test" element={<InDevelopment/>} />
+                    <Route exact path="/blog" element={<BlogPage/>} />
+                    <Route exact path="/blog-test" element={<BlogTest/>} />
 
                     {/* experimental */}
                     <Route exact path="/dev" element={<InDevelopment/>}/>
 
                     {/* These are the blogs */}
-                    <Route exact path="/blog1" element={<InDevelopment />} />
-                    <Route exact path="/blog2" element={<InDevelopment />} />
-                    <Route exact path="/blog3" element={<InDevelopment />} />
-                    <Route exact path="/blog4" element={<InDevelopment />} />
-                    <Route exact path="/blog5" element={<InDevelopment />} />
-                    <Route exact path="/blog6" element={<InDevelopment />} />
+                    <Route exact path="/blog1" element={<Blog1 />} />
+                    <Route exact path="/blog2" element={<Blog2 />} />
+                    <Route exact path="/blog3" element={<Blog3 />} />
+                    <Route exact path="/blog4" element={<Blog4 />} />
+                    <Route exact path="/blog5" element={<Blog5 />} />
+                    <Route exact path="/blog6" element={<Blog6 />} />
                     {/* These are the blogs */}
 
-                    <Route exact path="/books" element={<InDevelopment/>} />
-                    <Route exact path="/portfolio" element={<InDevelopment/>} />
-					<Route path="*" element={<InDevelopment/>} />
+                    <Route exact path="/books" element={<InDevelopment />} />
+                    <Route exact path="/portfolio" element={<InDevelopment />} />
+					<Route path="*" element={<NotFound/>} />
                 </Routes>
             </Layout>
         </BrowserRouter>

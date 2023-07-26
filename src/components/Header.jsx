@@ -33,22 +33,6 @@ const Header = () => {
     
     }
 
-    const handleKalixer = () => {
-        window.location.href = '/'
-    }
-    const handleAbout = () => {
-        window.location.href = '/about'
-    }
-    const handleBlog = () => {
-        window.location.href = '/blog'
-    }
-    const handleBooks = () => {
-        window.location.href = '/books'
-    }
-    const handlePortfolio = () => {
-        window.location.href = '/portfolio'
-    }
-
     return (
         <div className="header" id="head"
         style={{height: `${headerSize}`}}
@@ -61,14 +45,14 @@ const Header = () => {
                     <div></div>
                     <div></div>
                 </button>
-                <div className="name" onClick={handleKalixer}>
-                    <p>Kalixer</p>
+                <div className="name">
+                    <Link to='/'><p>Kalixer</p></Link>
                 </div>
                 <ul className="nav-bar">
-                    <li onClick={handleAbout}>About</li>
+                    <li><Link to='/about'>About</Link></li>
                     <li><Link to='/blog'>Blog</Link></li>
-                    <li onClick={handleBooks}>Books</li>
-                    <li onClick={handlePortfolio}>Portfolio</li>
+                    <li><Link to='/books'>Books</Link></li>
+                    <li><Link to ='/portfolio'>Portfolio</Link></li>
                     <li>Contact</li>
                 </ul>
 

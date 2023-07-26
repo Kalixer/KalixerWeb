@@ -7,7 +7,7 @@ const About = () => {
 
     const kalixer = {
         Name: 'Alejandro Cáceres',
-        Phone: '+569 4993 7831',
+        Phone: 'Samsung A53 (Just Kidding)',
         Experience: 'A few personal projects',
         Age: '22',
         GitHub: 'github.com/Kalixer',
