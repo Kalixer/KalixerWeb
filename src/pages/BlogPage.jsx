@@ -4,7 +4,7 @@ import BlogEntries from '@components/BlogEntries';
 
 import '@styles/BlogPage.scss';
 
-const blogDescription = `Unraveling the labyrinth of an Introverts mind`
+const blogDescription = `Unraveling the labyrinth of an Introvert's mind`
 
 const introEx = <p className='p-intro'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam optio molestias fugiat temporibus laborum, distinctio, est error, sit deserunt libero fugit porro cum reiciendis ducimus numquam accusamus. Dicta, quas similique.</p>
 
