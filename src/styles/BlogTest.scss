@@ -45,3 +45,12 @@
 .blog-content p {
     margin: 1rem;
 }
+
+@media (max-width: 450px) {
+    .BlogTest .Title{
+        width: 70vw;
+    }
+    .BlogTest .blog-content {
+        width: 80vw;
+    }
+}
