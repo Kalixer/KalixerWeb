@@ -47,3 +47,13 @@
     padding: 0 1.5rem 1.5rem 1.5rem;
     font-size: 1.6rem;
 }
+
+@media (max-width: 430px) {
+    .Entry{
+        max-width: 90vw;
+    }
+    .Entry .imagen {
+        height: 100%;
+        width: 100%;
+    }
+}

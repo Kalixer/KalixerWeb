@@ -27,3 +27,9 @@
     flex-wrap: wrap;
     // border: 1px solid orange;
 }
+
+@media (max-width: 430px){
+    .BlogEntries .entry-by-three{
+        width: 100vw;
+    }
+}
