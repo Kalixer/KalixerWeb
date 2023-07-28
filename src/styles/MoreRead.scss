@@ -21,6 +21,11 @@
 
 @media (max-width: 450px){
     .more-read .entry-by-two{
+        width: 100vw;
+        max-width: 33rem;
         flex-direction: column;
+    }
+    .entry-by-two .Entry{
+        width: auto
     }
 }
