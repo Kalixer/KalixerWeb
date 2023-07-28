@@ -18,3 +18,9 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+@media (max-width: 450px){
+    .more-read .entry-by-two{
+        flex-direction: column;
+    }
+}
