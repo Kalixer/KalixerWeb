@@ -21,11 +21,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column;    
+
+    text-align: center;
 }
 .InDev .message h1 {
     font-size: 5rem;
 }
 .InDev .message h2 {
     font-size: 4rem;
+}
+
+@media (max-width: 450px) {
+    .InDev .message {
+        position: absolute;
+        top: -8rem;
+    }
+    .InDev .message h1 {
+        font-size: 4.8rem;
+        margin: 1rem 10px;
+    }
+    .InDev .message h2 {
+        font-size: 3rem;
+    }
 }
