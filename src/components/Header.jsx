@@ -28,6 +28,7 @@ const Header = () => {
             setheaderSize(`8vh`)
             setdisplayStatus('none')
         }
+        console.log("toggle")
     
     }
     const unToggle = () => {
@@ -35,6 +36,7 @@ const Header = () => {
             setheaderSize(`8vh`)
             setdisplayStatus('none')
         }
+        console.log("unToggle")
     }
 
     return (
