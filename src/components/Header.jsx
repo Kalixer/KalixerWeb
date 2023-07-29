@@ -62,8 +62,8 @@ const Header = () => {
 
                 <div 
                 className="contact-responsive" 
-                // onMouseOver={setTaupe} 
-                // onMouseLeave={setWhite}
+                onMouseOver={setTaupe} 
+                onMouseLeave={setWhite}
                 >
                     {colorIcon}
                 </div>
