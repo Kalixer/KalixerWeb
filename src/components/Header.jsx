@@ -21,8 +21,6 @@ const Header = () => {
 
     const toggleMenu = () => {
 
-        console.log(displayStatus)
-
         if (displayStatus == 'none') {
             setheaderSize(`100vh`)
             setdisplayStatus('flex')
@@ -31,6 +29,12 @@ const Header = () => {
             setdisplayStatus('none')
         }
     
+    }
+    const unToggle = () => {
+        if (displayStatus != 'none'){
+            setheaderSize(`8vh`)
+            setdisplayStatus('none')
+        }
     }
 
     return (
@@ -46,7 +50,7 @@ const Header = () => {
                     <div></div>
                 </button>
                 <div className="name">
-                    <Link to='/'><p>Kalixer</p></Link>
+                    <Link to='/' onClick={unToggle}><p>Kalixer</p></Link>
                 </div>
                 <ul className="nav-bar">
                     <li><Link to='/about'>About</Link></li>
@@ -58,8 +62,8 @@ const Header = () => {
 
                 <div 
                 className="contact-responsive" 
-                onMouseOver={setTaupe} 
-                onMouseLeave={setWhite}
+                // onMouseOver={setTaupe} 
+                // onMouseLeave={setWhite}
                 >
                     {colorIcon}
                 </div>
@@ -67,11 +71,11 @@ const Header = () => {
             <div className="bottom-section"
             style={{display: `${displayStatus}`}}
             >
-                <div className="bottom-nav-box"><Link to='/about'>About</Link></div>
-                <div className="bottom-nav-box"><Link to='/blog'>Blog</Link></div>
-                <div className="bottom-nav-box"><Link to='/books'>Books</Link></div>
-                <div className="bottom-nav-box"><Link to ='/portfolio'>Portfolio</Link></div>
-                <div className="bottom-nav-box">Contact</div>
+                <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/about'>About</Link></div>
+                <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/blog'>Blog</Link></div>
+                <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/books'>Books</Link></div>
+                <div className="bottom-nav-box" onClick={toggleMenu}><Link to ='/portfolio'>Portfolio</Link></div>
+                <div className="bottom-nav-box" onClick={toggleMenu}>Contact</div>
             </div>
         </div>
     );
