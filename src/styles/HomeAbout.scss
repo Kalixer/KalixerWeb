@@ -1,0 +1,39 @@
+.AboutPage .content .About{
+    margin-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // border: 2px solid blue;
+}
+
+.AboutPage .content .About h1 {
+    text-align: center;
+    font-size: 5rem;
+    // border: 1px solid red;  
+}
+.AboutPage .content .About .description {
+    width: 80vw;
+    height: 300px;
+    // border: 1px solid brown;
+
+    margin: 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.AboutPage .message_1 p {
+    // border: 1px solid green;
+    text-align: center;
+
+    font-size: 1.6rem;
+    color: grey;
+    width: 20vw;
+}
+.AboutPage .message_2 {
+    // border: 1px solid hotpink;
+
+    font-size: 2rem;
+    width: 50vw;
+}
