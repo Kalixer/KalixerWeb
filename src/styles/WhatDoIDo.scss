@@ -1,0 +1,59 @@
+.What_do_i_do {
+    width: 100vw;
+    
+    display: flex;
+
+    // border: solid 1px blue;
+}
+
+.What_do_i_do .macro_left {
+    height: 600px;
+    width: 50%;
+    background-color: rgb(61, 61, 61);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+.What_do_i_do .macro_left .macro_box {
+    border: white solid 3px;
+    height: 300px;
+    width: 50%;
+    // padding: 3rem 0;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+// .What_do_i_do .macro_left .macro_box p {
+//     margin: 1rem;
+// }
+.What_do_i_do .macro_left .macro_box :nth-child(1){
+    font-weight: bold;
+    font-size: 2.6rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // border: solid 1px orangered;
+}
+.What_do_i_do .macro_left .macro_box :nth-child(2){
+    font-size: 2rem;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // border: solid 1px orangered;
+
+}
+.What_do_i_do .macro_right {
+    height: 600px;
+    width: 50%;
+
+}
