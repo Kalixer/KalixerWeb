@@ -1,0 +1,54 @@
+.HomeAbout{
+    padding-top: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // border: 2px solid blue;
+}
+.HomeAbout .introduction {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+.HomeAbout .title_section {
+    // border: 1px solid purple;
+    width: 40vw;
+}
+.HomeAbout h1 {
+    // text-align: center;
+    font-size: 5rem;
+    // border: 1px solid red;
+}
+.HomeAbout .description {
+    width: 80vw;
+    height: auto;
+    // border: 1px solid brown;
+
+    // margin: 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.HomeAbout .message_1 {
+    // border: 1px solid green;
+    text-align: center;
+
+    display: flex;
+    // justify-content: center;
+
+    padding-top: 1rem;
+
+    font-size: 1.6rem;
+    color: grey;
+    width: 20vw;
+}
+.HomeAbout .message_2 {
+    // border: 1px solid hotpink;
+
+    font-size: 1.8rem;
+    width: 65vw;
+}

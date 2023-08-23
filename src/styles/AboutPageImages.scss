@@ -1,0 +1,52 @@
+.AboutPage_images {
+    // border: 1px solid orangered;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+}
+.AboutPage_images .image1 {
+    width: 90vw;
+    height: 450px;
+
+    // border: solid 1px red;
+    margin-bottom: 8rem;
+}
+.AboutPage_images .image1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.AboutPage_images .quote_and_image {
+    // border: 1px solid hotpink;
+    width: 90vw;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.AboutPage_images .quote_and_image .quote {
+    // border: solid 1px green;
+    height: 300px;
+    width: 35vw;
+
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+    font-size: 2.6rem;
+}
+.AboutPage_images .quote_and_image .quote p {
+    padding: 8rem 3rem;
+    font-weight: 600;
+}
+.AboutPage_images .quote_and_image .image2 {
+    height: 300px;
+    width: 45vw;
+}
+.AboutPage_images .quote_and_image .image2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

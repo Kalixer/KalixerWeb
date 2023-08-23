@@ -1,0 +1,87 @@
+.What_do_i_do {
+    width: 100vw;
+    
+    display: flex;
+
+    // border: solid 1px blue;
+}
+
+.What_do_i_do .macro_left {
+    height: 90vh;
+    width: 50%;
+    background-color: rgb(61, 61, 61);
+    border: 1px solid #333;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+.What_do_i_do .macro_left .macro_box {
+    border: white solid 3px;
+    height: 300px;
+    width: 50%;
+    // padding: 3rem 0;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+// .What_do_i_do .macro_left .macro_box p {
+//     margin: 1rem;
+// }
+.What_do_i_do .macro_left .macro_box :nth-child(1){
+    font-weight: bold;
+    font-size: 2.6rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // border: solid 1px orangered;
+}
+.What_do_i_do .macro_left .macro_box :nth-child(2){
+    font-size: 2rem;
+    height: 60%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // border: solid 1px orangered;
+
+}
+.What_do_i_do .macro_right {
+    border: 1px solid #333;
+    height: 90vh;
+    width: 50%;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    // gap: 10px
+}
+.What_do_i_do .macro_right .do_box {
+    // border: 1px solid #333;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+    text-align: center;
+
+    color: rgb(61, 61, 61)
+}
+
+.do_box h1{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+.do_box p {
+    font-size: 1.5rem;
+}

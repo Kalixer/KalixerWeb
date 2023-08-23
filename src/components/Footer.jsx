@@ -8,7 +8,7 @@ const Footer = () => {
     const linkedId_icon = <img src="https://img.icons8.com/nolan/64/linkedin.png"/>
     const insta_icon = <img src="https://img.icons8.com/nolan/64/instagram-new.png"/>
 
-    const phone_joke = `Samsung A35 (Joke)`
+    const phone_joke = `Samsung A53 (Joke)`
     const handleClickLinkedIn = () => {
         window.open('https://www.linkedin.com/in/alejandro-c%C3%A1ceres-505204268', '_blank')
     }

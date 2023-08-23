@@ -25,8 +25,8 @@ const App = () => {
         <BrowserRouter basename="/Kalixer/">
             <Layout>
                 <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route exact path="/about" element={<InDevelopment />} />
+                    <Route exact path="/" element={<AboutPage />} />
+                    <Route exact path="/about" element={<Home />} />
                     <Route exact path="/blog" element={<BlogPage/>} />
                     <Route exact path="/blog-test" element={<BlogTest/>} />
 
