@@ -6,8 +6,8 @@ const AboutEnd = () => {
     return (
         <div className='AboutEnd'>
             <div className='Title_Description'>
-                <h1>Title</h1>
-                <p>Description</p>
+                <h1>Who I am?</h1>
+                <p>These are the areas of my life, at least the ones that I don't mind sharing</p>
             </div>
             <AboutBoxes/>
         </div>
