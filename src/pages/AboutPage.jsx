@@ -5,7 +5,8 @@ import AboutPageImages from '@components/AboutPageImages';
 
 import '@styles/AboutPage.scss'
 import HomeAbout from '@components/HomeAbout';
-import WhatDoIDo from '../components/WhatDoIDo';
+import WhatDoIDo from '@components/WhatDoIDo';
+import AboutEnd from '@components/AboutEnd';
 
 const About = () => {
     return (
@@ -15,6 +16,7 @@ const About = () => {
                 <HomeAbout/>
                 <AboutPageImages/>
                 <WhatDoIDo/>
+                <AboutEnd/>
             </section>
         </div>
     )   
