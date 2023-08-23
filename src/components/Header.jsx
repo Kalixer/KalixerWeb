@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import '@styles/Header.scss';
 
+import scrollToTop from "@utils/scrollToTop";
+
 const contact_white = <img src="https://img.icons8.com/small/32/FFFFFF/user.png"/>
 const contact_taupe = <img src="https://img.icons8.com/small/32/988780/user.png"/>
 
@@ -52,13 +54,13 @@ const Header = () => {
                     <div></div>
                 </button>
                 <div className="name">
-                    <Link to='/' onClick={unToggle}><p>Kalixer</p></Link>
+                    <Link to='/' onClick={unToggle}><p onClick={scrollToTop}>Kalixer</p></Link>
                 </div>
                 <ul className="nav-bar">
-                    <li><Link to='/about'>About</Link></li>
-                    <li><Link to='/blog'>Blog</Link></li>
-                    <li><Link to='/books'>Books</Link></li>
-                    <li><Link to ='/portfolio'>Portfolio</Link></li>
+                    <li><Link to='/about' onClick={scrollToTop}>About</Link></li>
+                    <li><Link to='/blog' onClick={scrollToTop}>Blog</Link></li>
+                    <li><Link to='/books' onClick={scrollToTop}>Books</Link></li>
+                    <li><Link to ='/portfolio' onClick={scrollToTop}>Portfolio</Link></li>
                     <li>Contact</li>
                 </ul>
 
@@ -73,10 +75,10 @@ const Header = () => {
             <div className="bottom-section"
             style={{display: `${displayStatus}`}}
             >
-                <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/about'>About</Link></div>
-                <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/blog'>Blog</Link></div>
-                <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/books'>Books</Link></div>
-                <div className="bottom-nav-box" onClick={toggleMenu}><Link to ='/portfolio'>Portfolio</Link></div>
+                <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/about' onClick={scrollToTop}>About</Link></div>
+                <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/blog' onClick={scrollToTop}>Blog</Link></div>
+                <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/books' onClick={scrollToTop}>Books</Link></div>
+                <div className="bottom-nav-box" onClick={toggleMenu}><Link to ='/portfolio' onClick={scrollToTop}>Portfolio</Link></div>
                 <div className="bottom-nav-box" onClick={toggleMenu}>Contact</div>
             </div>
         </div>
