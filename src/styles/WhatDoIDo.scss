@@ -10,6 +10,8 @@
     height: 600px;
     width: 50%;
     background-color: rgb(61, 61, 61);
+    border: 1px solid #333;
+
 
     display: flex;
     flex-direction: column;
@@ -53,7 +55,33 @@
 
 }
 .What_do_i_do .macro_right {
+    border: 1px solid #333;
     height: 600px;
     width: 50%;
 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    // gap: 10px
+}
+.What_do_i_do .macro_right .do_box {
+    // border: 1px solid #333;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20%;
+    text-align: center;
+
+    color: rgb(61, 61, 61)
+}
+
+.do_box h1{
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+.do_box p {
+    font-size: 1.5rem;
 }
