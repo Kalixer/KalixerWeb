@@ -1,6 +1,6 @@
 .AboutBoxes {
-    // border: solid 1px red;
-    width: 70vw;
+    border: solid 1px red;
+    max-width: 90vw;
     
     display: grid;
     grid-template-columns: repeat(2, 1fr);
