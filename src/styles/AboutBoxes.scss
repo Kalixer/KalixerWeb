@@ -1,6 +1,6 @@
 .AboutBoxes {
-    border: solid 1px red;
-    max-width: 90vw;
+    // border: solid 1px red;
+    width: 70vw;
     
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -46,3 +46,29 @@
 .AboutBoxes .box .text p {
     font-size: 2rem;
 }
+
+// This is for tablets
+@media (max-width: 770px) {
+    .AboutBoxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        // justify-content: center;
+
+        gap: 40px;
+    }
+    .AboutBoxes .box {
+        width: 90vw;
+        height: 400px;
+    }
+    .AboutBoxes .box figure {
+        height: 100%;
+        width: 100%;
+    }
+    .AboutBoxes .box figure img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// This is for mobiles
