@@ -52,3 +52,19 @@
     font-size: 1.8rem;
     width: 65vw;
 }
+
+@media (max-width: 450px) {
+    .HomeAbout .title_section {
+        width: auto;
+        text-align: center;
+    }
+    .HomeAbout .description {
+        justify-content: center;
+    }
+    .HomeAbout .message_1{
+        display: none;
+    }
+    .HomeAbout .message_2{
+        width: 80vw;
+    }
+}
