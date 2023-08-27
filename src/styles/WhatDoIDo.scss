@@ -55,7 +55,7 @@
 
 }
 .What_do_i_do .macro_right {
-    border: 1px solid #333;
+    // border: 1px solid #333;
     height: 90vh;
     width: 50%;
 
@@ -91,7 +91,8 @@
         flex-direction: column;
     }
     .What_do_i_do .macro_left {
-        width: 100vw;
+        width: 99%;
+        border-right: #333 solid 2px;
     }
     .What_do_i_do .macro_left .macro_box {
         height: 60%;
