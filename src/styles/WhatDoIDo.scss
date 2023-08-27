@@ -85,3 +85,15 @@
 .do_box p {
     font-size: 1.5rem;
 }
+
+@media (max-width: 450px) {
+    .What_do_i_do {
+        flex-direction: column;
+    }
+    .What_do_i_do .macro_left {
+        width: 100vw;
+    }
+    .What_do_i_do .macro_right {
+        width: 100vw;
+    }
+}
