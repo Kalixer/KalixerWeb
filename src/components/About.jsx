@@ -9,7 +9,7 @@ const About = () => {
         Name: 'Alejandro Cáceres',
         Phone: 'Samsung A53 (Just Kidding)',
         Experience: 'A few personal projects',
-        Age: '22',
+        Age: '23',
         GitHub: 'github.com/Kalixer',
         Studies: 'Platzi.com',
         English: 'B2 Level (Intermediate)',
