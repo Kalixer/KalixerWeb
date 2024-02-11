@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Entry from '@components/Entry';
+import BlogEntry from '@components/BlogEntry';
 
 import '@styles/BlogTest.scss';
 
@@ -27,8 +27,8 @@ const BlogTest = () => {
             <div className='more-read'>
                 <h1>Wanna read more?</h1>
                 <div className='entry-by-two'>
-                    <Entry/>
-                    <Entry/>
+                    <BlogEntry/>
+                    <BlogEntry/>
                 </div>
             </div>
         </div>
