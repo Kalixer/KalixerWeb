@@ -3,18 +3,29 @@ import IntroSection from '@components/IntroSection';
 import '@styles/BooksPage.scss';
 import profile from '@assets/profile.jpeg'
 
+const movieLinkPoster = 'https://cloudfront-us-east-1.images.arcpublishing.com/copesa/S4367N7H5VAYTB225C4GCG2ZHI.jpeg'
+const serieLinkPoster = 'https://www.bolsamania.com/seriesadictos/wp-content/uploads/2011/01/00037716.jpg'
+
 const allEntries= [
-    { category: 'Films', title: 'Inception', imageSrc: '', imageTest: profile},
-    { category: 'Films', title: 'The Dark Knight',  imageSrc: '', imageTest: profile},
-    { category: 'Books', title: 'Never Split The Difference',  imageSrc: '', imageTest: profile},
-    { category: 'Books', title: 'Quiet',  imageSrc: '', imageTest: profile},
-    { category: 'Series', title: 'SmallVille',  imageSrc: '', imageTest: profile},
-    { category: 'Series', title: 'Clone Wars',  imageSrc: '', imageTest: profile},
-    { category: 'VideoGames', title: 'Forza Motorsport',  imageSrc: '', imageTest: profile},
-    { category: 'VideoGames', title: 'Forza Horizon 5',  imageSrc: '', imageTest: profile},
-    { category: 'VideoGames', title: 'Outer Wilds',  imageSrc: '', imageTest: profile},
-    { category: 'VideoGames', title: 'Escape Academy',  imageSrc: '', imageTest: profile},
+    { category: 'Films', title: 'Inception', imageSrc: 'https://m.media-amazon.com/images/I/A1eIBPcRUqL._AC_UF894,1000_QL80_.jpg'},
+    { category: 'Films', title: 'The Dark Knight',  imageSrc: 'https://play-lh.googleusercontent.com/qhfncXOqccJ5Y_IBPaRy0O79QZQDl7L5FyKQAsLFICt8c9-2Vfmqd2bniAPESto0ZmSLTOzjl-o1F_jgb2Nr'},
+    { category: 'Books', title: 'Never Split The Difference',  imageSrc: 'https://images.squarespace-cdn.com/content/v1/5a1ee5b29f07f5ecc278f6c8/1567952731469-P0061DFC7X6K5OBV86JO/Never+Split+The+Difference.jpg'},
+    { category: 'Books', title: 'Quiet',  imageSrc: 'https://images.booksense.com/images/722/694/9788417694722.jpg'},
+    { category: 'Series', title: 'SmallVille',  imageSrc: 'https://www.bolsamania.com/seriesadictos/wp-content/uploads/2011/01/00037716.jpg'},
+    { category: 'Series', title: 'Clone Wars',  imageSrc: 'https://m.media-amazon.com/images/I/817h8As4D7L.jpg'},
+    { category: 'VideoGames', title: 'Forza Motorsport',  imageSrc: 'https://myhotposters.com/cdn/shop/products/mL6943_1024x1024.jpg?v=1697834226'},
+    { category: 'VideoGames', title: 'Forza Horizon 5',  imageSrc: 'https://i.ebayimg.com/images/g/9VoAAOSwaU9hfHFE/s-l1600.jpg'},
+    { category: 'VideoGames', title: 'Outer Wilds',  imageSrc: 'https://m.media-amazon.com/images/I/61nDUVM-I3L.jpg'},
+    { category: 'VideoGames', title: 'Escape Academy',  imageSrc: 'https://image.api.playstation.com/vulcan/ap/rnd/202206/2716/LNQM7aIv1GVdyqqtzZ24oa28.png'},
 ]
+
+/*
+    Ideas for the next sesion
+
+    1. Modify the whole page when you click
+    2. Background => the cover of the item
+    3. Background and nav items must have the position fixed property
+*/
 
 const Books = () => {
     const [entries, setEntries] = React.useState(allEntries)
@@ -39,7 +50,11 @@ const Books = () => {
                         (entry) => (
                             <div 
                             key={entry.title} 
-                            className='content-entry'>{entry.title}
+                            className='content-entry'>
+                                <figure>
+                                    <img src={entry.imageSrc} alt="background picture" />
+                                </figure>
+                                {/* <p>{entry.title}</p> */}
                             </div>
                         )
                     )}
