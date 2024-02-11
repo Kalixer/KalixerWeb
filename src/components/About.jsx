@@ -18,7 +18,7 @@ const About = () => {
     const kalixer_keys = Object.keys(kalixer);
     
     const handleCV = () => {
-        window.open('https://drive.google.com/file/d/1vVRr_U9Kr4Z10HAFGiMqi_-x_ofxPlWY/view?usp=drive_link', '_blank')
+        window.open('https://drive.google.com/file/d/1_g9M-kOaSRr2BxxKrUCtBXN0nRveVcxw/view?usp=sharing', '_blank')
     }
 
 
