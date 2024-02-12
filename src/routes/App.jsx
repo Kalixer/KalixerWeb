@@ -17,13 +17,14 @@ import Blog6 from "@blogs/Blog6";
 import BlogTest from "@pages/BlogTest";
 import InDevelopment from "@pages/InDevelopment";
 
+import hideFooter from '@containers/Layout'
 import '@styles/global.css'
 
 const App = () => {
     return (
         // <BrowserRouter basename="/">
         <BrowserRouter basename="/Kalixer/">
-            <Layout>
+            <Layout hideFooter={false}>
                 <Routes>
                     <Route exact path="/" element={<AboutPage />} />
                     <Route exact path="/about" element={<Home />} />
@@ -42,7 +43,7 @@ const App = () => {
                     <Route exact path="/blog6" element={<Blog6 />} />
                     {/* These are the blogs */}
 
-                    <Route exact path="/books" element={<InDevelopment />} />
+                    <Route exact path="/books" element={<BooksPage />} />
                     <Route exact path="/portfolio" element={<InDevelopment />} />
 					<Route path="*" element={<NotFound/>} />
                 </Routes>

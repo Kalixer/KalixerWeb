@@ -1,5 +1,5 @@
 import React from "react";
-import Entry from "@components/Entry";
+import BlogEntry from "@components/BlogEntry";
 
 import blogData from '@utils/blogData';
 import randomRange from '@utils/randomRange';
@@ -29,12 +29,12 @@ const MoreRead = (props) => {
         <div className='more-read'>
             <h1>Wanna read more?</h1>
             <div className='entry-by-two'>
-                <Entry 
+                <BlogEntry 
                 title={blogData[randomBlog1].title}
                 image={blogData[randomBlog1].image}
                 link={blogData[randomBlog1].link}
                 />
-                <Entry
+                <BlogEntry
                 title={blogData[randomBlog2].title}
                 image={blogData[randomBlog2].image}
                 link={blogData[randomBlog2].link}

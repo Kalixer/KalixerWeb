@@ -9,7 +9,7 @@ const About = () => {
         Name: 'Alejandro Cáceres',
         Phone: 'Samsung A53 (Just Kidding)',
         Experience: 'A few personal projects',
-        Age: '22',
+        Age: '23',
         GitHub: 'github.com/Kalixer',
         Studies: 'Platzi.com',
         English: 'B2 Level (Intermediate)',
@@ -18,7 +18,7 @@ const About = () => {
     const kalixer_keys = Object.keys(kalixer);
     
     const handleCV = () => {
-        window.open('https://drive.google.com/file/d/1vVRr_U9Kr4Z10HAFGiMqi_-x_ofxPlWY/view?usp=drive_link', '_blank')
+        window.open('https://drive.google.com/file/d/1_g9M-kOaSRr2BxxKrUCtBXN0nRveVcxw/view?usp=sharing', '_blank')
     }
 
 

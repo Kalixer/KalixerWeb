@@ -1,4 +1,4 @@
-.Entry {
+.BlogEntry {
     border: solid 1px rgb(180, 180, 180);
     border-radius: 10px;
     height: 430px;
@@ -9,10 +9,10 @@
     display: flex;
     flex-direction: column;
 }
-.Entry:hover {
+.BlogEntry:hover {
     cursor: pointer;
 }
-.Entry .imagen{
+.BlogEntry .imagen{
     height: 21.4rem;
     width: 32rem;
 
@@ -22,13 +22,13 @@
     justify-content: center;
 
 }
-.Entry .imagen img {
+.BlogEntry .imagen img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 5px;
 }
-.Entry .entry-content {
+.BlogEntry .entry-content {
     height: 55%;
     // border: solid 1px orange;
 
@@ -38,21 +38,21 @@
     justify-content: center;
     text-align: center;
 }
-.Entry .entry-content h1 {
+.BlogEntry .entry-content h1 {
     font-size: 2.5rem;
     margin-top: 1.2rem;
     margin-bottom: 1.8rem;
 }
-.Entry .entry-content p {
+.BlogEntry .entry-content p {
     padding: 0 1.5rem 1.5rem 1.5rem;
     font-size: 1.6rem;
 }
 
 @media (max-width: 430px) {
-    .Entry{
+    .BlogEntry{
         max-width: 90vw;
     }
-    .Entry .imagen {
+    .BlogEntry .imagen {
         height: 100%;
         width: 100%;
     }

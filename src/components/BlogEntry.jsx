@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '@styles/Entry.scss';
+import '@styles/BlogEntry.scss';
 
 import scrollToTop from '@utils/scrollToTop';
 
@@ -11,7 +11,7 @@ const Entry = (props) => {
 	let link = `/${props.link}`
 	
 	return (
-		<div className='Entry'>
+		<div className='BlogEntry'>
 			<Link to={link} onClick={scrollToTop}>
 				<figure className='imagen'>
 					<img src={props.image} alt="" />
