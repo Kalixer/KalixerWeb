@@ -18,8 +18,7 @@ const allEntries= [
 
 /*
     Ideas for the next sesion
-    1. sacar el footer
- 
+    
     onClick
     1. Modify the whole pag
     2. Background => the cover of the item
@@ -54,7 +53,6 @@ const Books = () => {
                                     <figure>
                                         <img src={entry.imageSrc} alt="background picture" />
                                     </figure>
-                                    {/* <p>{entry.title}</p> */}
                                 </div>
                             )
                         )}
@@ -62,34 +60,6 @@ const Books = () => {
                 </section>
 
             </div>
-        // <Layout showFooter={false}>
-        //     <div className='Books'>
-        //         <IntroSection />
-        //         <section className='content'>
-        //             <nav className='type-nav'>
-        //                 <div className='category' onClick={() => selectCategory('Films')}>Films</div>
-        //                 <div className='category' onClick={() => selectCategory('Series')}>Series</div>
-        //                 <div className='category' onClick={() => selectCategory('Books')}>Books</div>
-        //                 <div className='category' onClick={() => selectCategory('VideoGames')}>Videogames</div>
-        //             </nav>
-        //             <div className='books-content'>
-        //                 {entries.map(
-        //                     (entry) => (
-        //                         <div 
-        //                         key={entry.title} 
-        //                         className='content-entry'>
-        //                             <figure>
-        //                                 <img src={entry.imageSrc} alt="background picture" />
-        //                             </figure>
-        //                             {/* <p>{entry.title}</p> */}
-        //                         </div>
-        //                     )
-        //                 )}
-        //             </div>
-        //         </section>
-
-        //     </div>
-        // </Layout>
     )   
 }
 
