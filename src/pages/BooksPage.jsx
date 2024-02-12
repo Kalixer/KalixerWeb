@@ -1,10 +1,7 @@
 import React  from 'react';
 import IntroSection from '@components/IntroSection';
+import Layout, {showFooter} from '@containers/Layout';
 import '@styles/BooksPage.scss';
-import profile from '@assets/profile.jpeg'
-
-const movieLinkPoster = 'https://cloudfront-us-east-1.images.arcpublishing.com/copesa/S4367N7H5VAYTB225C4GCG2ZHI.jpeg'
-const serieLinkPoster = 'https://www.bolsamania.com/seriesadictos/wp-content/uploads/2011/01/00037716.jpg'
 
 const allEntries= [
     { category: 'Films', title: 'Inception', imageSrc: 'https://m.media-amazon.com/images/I/A1eIBPcRUqL._AC_UF894,1000_QL80_.jpg'},
@@ -21,47 +18,75 @@ const allEntries= [
 
 /*
     Ideas for the next sesion
-
-    1. Modify the whole page when you click
+    1. sacar el footer
+ 
+    onClick
+    1. Modify the whole pag
     2. Background => the cover of the item
-    3. Background and nav items must have the position fixed property
 */
 
 const Books = () => {
     const [entries, setEntries] = React.useState(allEntries)
     
-
     function selectCategory (categoria) {
         const entriesFiltered = allEntries.filter(entries => entries.category === categoria)
         setEntries(entriesFiltered)
     }
     return (
         <div className='Books'>
-            <IntroSection />
-            <section className='content'>
-                <nav className='type-nav'>
-                    <div className='category' onClick={() => selectCategory('Films')}>Films</div>
-                    <div className='category' onClick={() => selectCategory('Series')}>Series</div>
-                    <div className='category' onClick={() => selectCategory('Books')}>Books</div>
-                    <div className='category' onClick={() => selectCategory('VideoGames')}>Videogames</div>
-                </nav>
-                <div className='books-content'>
-                    {entries.map(
-                        (entry) => (
-                            <div 
-                            key={entry.title} 
-                            className='content-entry'>
-                                <figure>
-                                    <img src={entry.imageSrc} alt="background picture" />
-                                </figure>
-                                {/* <p>{entry.title}</p> */}
-                            </div>
-                        )
-                    )}
-                </div>
-            </section>
+                <IntroSection />
+                <section className='content'>
+                    <nav className='type-nav'>
+                        <div className='category' onClick={() => selectCategory('Films')}>Films</div>
+                        <div className='category' onClick={() => selectCategory('Series')}>Series</div>
+                        <div className='category' onClick={() => selectCategory('Books')}>Books</div>
+                        <div className='category' onClick={() => selectCategory('VideoGames')}>Videogames</div>
+                    </nav>
+                    <div className='books-content'>
+                        {entries.map(
+                            (entry) => (
+                                <div 
+                                key={entry.title} 
+                                className='content-entry'>
+                                    <figure>
+                                        <img src={entry.imageSrc} alt="background picture" />
+                                    </figure>
+                                    {/* <p>{entry.title}</p> */}
+                                </div>
+                            )
+                        )}
+                    </div>
+                </section>
 
-        </div>
+            </div>
+        // <Layout showFooter={false}>
+        //     <div className='Books'>
+        //         <IntroSection />
+        //         <section className='content'>
+        //             <nav className='type-nav'>
+        //                 <div className='category' onClick={() => selectCategory('Films')}>Films</div>
+        //                 <div className='category' onClick={() => selectCategory('Series')}>Series</div>
+        //                 <div className='category' onClick={() => selectCategory('Books')}>Books</div>
+        //                 <div className='category' onClick={() => selectCategory('VideoGames')}>Videogames</div>
+        //             </nav>
+        //             <div className='books-content'>
+        //                 {entries.map(
+        //                     (entry) => (
+        //                         <div 
+        //                         key={entry.title} 
+        //                         className='content-entry'>
+        //                             <figure>
+        //                                 <img src={entry.imageSrc} alt="background picture" />
+        //                             </figure>
+        //                             {/* <p>{entry.title}</p> */}
+        //                         </div>
+        //                     )
+        //                 )}
+        //             </div>
+        //         </section>
+
+        //     </div>
+        // </Layout>
     )   
 }
 
