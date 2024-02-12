@@ -2,11 +2,11 @@ import React from 'react';
 import '@styles/IntroSection.scss';
 import fondo from '@assets/background_laptop_cut.jpg'
 
-const IntroSection = () => {
+const IntroSection = ({backgroundImg = fondo}) => {
     return (
         <div className='IntroSection'>
             <figure className='IntroImagen'>
-                <img src={fondo} alt="" />
+                <img src={backgroundImg} alt="" />
             </figure>
         </div>
     )

@@ -1,7 +1,7 @@
 import React  from 'react';
 import IntroSection from '@components/IntroSection';
 import { useFooterContext } from '@containers/Layout';
-import '@styles/BooksPage.scss';
+import '@styles/HobbiesPage.scss';
 
 const allEntries= [
     { category: 'Films', title: 'Inception', imageSrc: 'https://m.media-amazon.com/images/I/A1eIBPcRUqL._AC_UF894,1000_QL80_.jpg'},
@@ -26,6 +26,7 @@ const allEntries= [
 
 const Books = () => {
     const [entries, setEntries] = React.useState(allEntries)
+    const [introSection, setIntroSection] = React.useState(<IntroSection />)
     
     const { setHideFooter } = useFooterContext()
     setHideFooter(true)
@@ -34,9 +35,14 @@ const Books = () => {
         const entriesFiltered = allEntries.filter(entries => entries.category === categoria)
         setEntries(entriesFiltered)
     }
+    function handleClick(elemento) {
+        setIntroSection(<IntroSection backgroundImg={elemento.imageSrc}/>)
+        console.log(introSection)
+    }
+
     return (
         <div className='Books'>
-                <IntroSection />
+                {introSection}
                 <section className='content'>
                     <nav className='type-nav'>
                         <div className='category' onClick={() => selectCategory('Films')}>Films</div>
@@ -50,6 +56,7 @@ const Books = () => {
                                 <div
                                 key={entry.title} 
                                 className='content-entry'
+                                onClick={() => handleClick(entry)}
                                 >
                                     <figure>
                                         <img src={entry.imageSrc} alt="background picture" />

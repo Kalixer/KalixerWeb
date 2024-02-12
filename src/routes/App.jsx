@@ -5,7 +5,7 @@ import Home from "@components/Home";
 import NotFound from "@components/NotFound";
 import AboutPage from "@pages/AboutPage";
 import BlogPage from "@pages/BlogPage";
-import BooksPage from "@pages/BooksPage";
+import HobbiesPage from "@pages/HobbiesPage";
 import PortfolioPage from "@pages/PortfolioPage";
 import Blog1 from "@blogs/Blog1";
 import Blog2 from "@blogs/Blog2";
@@ -43,7 +43,7 @@ const App = () => {
                     <Route exact path="/blog6" element={<Blog6 />} />
                     {/* These are the blogs */}
 
-                    <Route exact path="/books" element={<BooksPage />} />
+                    <Route exact path="/hobbies" element={<HobbiesPage />} />
                     <Route exact path="/portfolio" element={<InDevelopment />} />
 					<Route path="*" element={<NotFound/>} />
                 </Routes>
