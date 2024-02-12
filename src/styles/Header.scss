@@ -16,10 +16,10 @@
     color: white;
 
     transition: background-color 0.2s ease;
+    z-index: 1;
 }
 .header:hover {
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1;
 }
 .top-section {
     width: 100vw;
