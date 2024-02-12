@@ -59,7 +59,7 @@ const Header = () => {
                 <ul className="nav-bar">
                     <li><Link to='/about' onClick={scrollToTop}>About</Link></li>
                     <li><Link to='/blog' onClick={scrollToTop}>Blog</Link></li>
-                    <li><Link to='/books' onClick={scrollToTop}>Books</Link></li>
+                    <li><Link to='/hobbies' onClick={scrollToTop}>Hobbies</Link></li>
                     <li><Link to ='/portfolio' onClick={scrollToTop}>Portfolio</Link></li>
                     <li>Contact</li>
                 </ul>

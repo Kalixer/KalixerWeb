@@ -1,7 +1,7 @@
 import React  from 'react';
 import IntroSection from '@components/IntroSection';
 import { useFooterContext } from '@containers/Layout';
-import '@styles/BooksPage.scss';
+import '@styles/HobbiesPage.scss';
 
 const allEntries= [
     { category: 'Films', title: 'Inception', imageSrc: 'https://m.media-amazon.com/images/I/A1eIBPcRUqL._AC_UF894,1000_QL80_.jpg'},
