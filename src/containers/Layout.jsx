@@ -3,23 +3,21 @@ import Footer from "@components/Footer.jsx";
 import Header from "@components/Header.jsx";
 
 const FooterPositionContext = createContext();
-const showFooter = createContext(true)
 
-const Layout = ({children, showFooter}) => {
+const Layout = ({children}) => {
+    const [hideFooter, setHideFooter] = useState(false)
     const [footerPosition, setFooterPosition] = useState(null)
-    console.log(showFooter)
     
     return (
-        <FooterPositionContext.Provider value={{footerPosition, setFooterPosition}}>
+        <FooterPositionContext.Provider value={{footerPosition, setFooterPosition, setHideFooter}}>
             <div className="Layout">
                 <Header />
                 {children}
-                {/* Consume the state from the context */}
-                {!showFooter && <Footer/>}
+                {hideFooter ? null : <Footer/>}
             </div>
         </FooterPositionContext.Provider>
     );
 }
 
-export const useFooterPosition = () => useContext(FooterPositionContext)
+export const useFooterContext = () => useContext(FooterPositionContext)
 export default Layout;

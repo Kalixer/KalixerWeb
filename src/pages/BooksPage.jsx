@@ -1,6 +1,6 @@
 import React  from 'react';
 import IntroSection from '@components/IntroSection';
-import Layout, {showFooter} from '@containers/Layout';
+import { useFooterContext } from '@containers/Layout';
 import '@styles/BooksPage.scss';
 
 const allEntries= [
@@ -28,6 +28,9 @@ const allEntries= [
 const Books = () => {
     const [entries, setEntries] = React.useState(allEntries)
     
+    const { setHideFooter } = useFooterContext()
+    setHideFooter(true)
+
     function selectCategory (categoria) {
         const entriesFiltered = allEntries.filter(entries => entries.category === categoria)
         setEntries(entriesFiltered)
