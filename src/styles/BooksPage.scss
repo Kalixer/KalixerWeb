@@ -3,13 +3,13 @@
 }
 .Books .content {
     // position: relative;
-    height: 224vh;
-    border: solid green 1px;
+    height: 100vh;
+    // border: solid green 1px;
 
     display: flex;
 }
 .Books .type-nav {
-    border: solid yellow 1px;
+    // border: solid yellow 1px;
     height: 92vh;
     width: 28vw;
     margin: 8vh 0;
@@ -23,7 +23,7 @@
     top: 0;
 }
 .Books .books-content {
-    border: solid orange 1px;
+    // border: solid orange 1px;
     min-height: 92vh;
     // max-height: auto;
     width: 72vw;
