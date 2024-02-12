@@ -6,10 +6,9 @@ const FooterPositionContext = createContext();
 
 const Layout = ({children}) => {
     const [hideFooter, setHideFooter] = useState(false)
-    const [footerPosition, setFooterPosition] = useState(null)
     
     return (
-        <FooterPositionContext.Provider value={{footerPosition, setFooterPosition, setHideFooter}}>
+        <FooterPositionContext.Provider value={{setHideFooter}}>
             <div className="Layout">
                 <Header />
                 {children}

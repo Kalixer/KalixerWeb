@@ -18,7 +18,7 @@ const allEntries= [
 
 /*
     Ideas for the next sesion
-    
+
     onClick
     1. Modify the whole pag
     2. Background => the cover of the item
@@ -47,9 +47,10 @@ const Books = () => {
                     <div className='books-content'>
                         {entries.map(
                             (entry) => (
-                                <div 
+                                <div
                                 key={entry.title} 
-                                className='content-entry'>
+                                className='content-entry'
+                                >
                                     <figure>
                                         <img src={entry.imageSrc} alt="background picture" />
                                     </figure>
