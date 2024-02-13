@@ -2,6 +2,7 @@ import React  from 'react';
 import { useFooterContext } from '@containers/Layout';
 import IntroSection from '@components/IntroSection';
 import { HobbiesContent } from '@components/HobbiesContent';
+import { HobbieEntry } from '@components/HobbieEntry';
 import '@styles/HobbiesPage.scss';
 
 const bookBackground = 'https://wallpapers.com/images/featured/book-5q6xbfxwtbme5kaj.jpg'
@@ -29,7 +30,6 @@ const entriesCategory = allEntries.map((entry) => {
         return
     }
 }).filter(entry => entry !== undefined)
-console.log(entriesCategory[0])
 
 /*
     Ideas for the next sesion
@@ -54,7 +54,6 @@ const Books = () => {
     function handleClick(elemento) {
         setIntroSection(<IntroSection backgroundImg={elemento.imagenBackground}/>)
         setSectionSelected(!sectionSelected)
-        console.log(introSection)
     }
     function goBack() {
         setSectionSelected(false)
@@ -73,12 +72,13 @@ const Books = () => {
                 <section className='content'>
                     <nav className='type-nav'>
                         {!sectionSelected ? 
-                            entriesCategory.map((entry) => (
-                            <div className='category' onClick={() => selectCategory(entry)}>{entry}</div>    
+                            // El 'index' es solo para que no salga un warning en la consola, en realidad no existe
+                            entriesCategory.map((entry, index) => (
+                                <div key={index} className='category' onClick={() => selectCategory(entry)}>{entry}</div>    
                         )) : 
-                            <div className='category' onClick={() => goBack()}>Go back</div>}
+                                <div className='category' onClick={() => goBack()}>Go back</div>}
                     </nav>
-                    {!sectionSelected ? hobbiesContentComponent : <></>}
+                    {!sectionSelected ? hobbiesContentComponent : <HobbieEntry />}
                 </section>
 
             </div>
