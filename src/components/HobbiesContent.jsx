@@ -1,7 +1,7 @@
 import React from 'react'
 import '@styles/HobbiesContent.scss'
 
-function HobbiesContent({entries}) {
+function HobbiesContent({entries, handleClick}) {
   return (
     <>
         <div className='HobbiesContent'>

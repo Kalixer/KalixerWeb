@@ -19,6 +19,18 @@ const allEntries= [
     { category: 'VideoGames', title: 'Escape Academy',  imageSrc: 'https://image.api.playstation.com/vulcan/ap/rnd/202206/2716/LNQM7aIv1GVdyqqtzZ24oa28.png', imagenBackground: 'https://images.alphacoders.com/125/1251036.jpg'},
 ]
 
+// Esto es para que puedas renderizar un div en type-nav por cada categoría
+let categoriaRepetida
+const entriesCategory = allEntries.map((entry) => {
+    if(entry.category !== categoriaRepetida) {
+        categoriaRepetida = entry.category
+        return entry.category
+    } else {
+        return
+    }
+}).filter(entry => entry !== undefined)
+console.log(entriesCategory[0])
+
 /*
     Ideas for the next sesion
 
@@ -41,20 +53,25 @@ const Books = () => {
     }
     function handleClick(elemento) {
         setIntroSection(<IntroSection backgroundImg={elemento.imagenBackground}/>)
+        setSectionSelected(!sectionSelected)
         console.log(introSection)
     }
+
+    const hobbiesContentComponent = <HobbiesContent 
+    entries={entries} 
+    handleClick={handleClick}
+    />
 
     return (
         <div className='Books'>
                 {introSection}
                 <section className='content'>
                     <nav className='type-nav'>
-                        <div className='category' onClick={() => selectCategory('Films')}>Films</div>
-                        <div className='category' onClick={() => selectCategory('Series')}>Series</div>
-                        <div className='category' onClick={() => selectCategory('Books')}>Books</div>
-                        <div className='category' onClick={() => selectCategory('VideoGames')}>Videogames</div>
+                        {entriesCategory.map((entry) => (
+                            <div className='category' onClick={() => selectCategory(entry)}>{entry}</div>    
+                        ))}                        
                     </nav>
-                    <HobbiesContent entries={entries}/>
+                    {!sectionSelected ? hobbiesContentComponent : <></>}
                 </section>
 
             </div>
