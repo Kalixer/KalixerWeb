@@ -1,6 +1,7 @@
 import React  from 'react';
-import IntroSection from '@components/IntroSection';
 import { useFooterContext } from '@containers/Layout';
+import IntroSection from '@components/IntroSection';
+import { HobbiesContent } from '@components/HobbiesContent';
 import '@styles/HobbiesPage.scss';
 
 const bookBackground = 'https://wallpapers.com/images/featured/book-5q6xbfxwtbme5kaj.jpg'
@@ -23,12 +24,13 @@ const allEntries= [
 
     onClick
     1. Modify the whole pag
-    2. Background => the cover of the item
+    2. Make it responsive
 */
 
 const Books = () => {
     const [entries, setEntries] = React.useState(allEntries)
     const [introSection, setIntroSection] = React.useState(<IntroSection />)
+    const [sectionSelected, setSectionSelected] = React.useState(false)
     
     const { setHideFooter } = useFooterContext()
     setHideFooter(true)
@@ -52,21 +54,7 @@ const Books = () => {
                         <div className='category' onClick={() => selectCategory('Books')}>Books</div>
                         <div className='category' onClick={() => selectCategory('VideoGames')}>Videogames</div>
                     </nav>
-                    <div className='books-content'>
-                        {entries.map(
-                            (entry) => (
-                                <div
-                                key={entry.title} 
-                                className='content-entry'
-                                onClick={() => handleClick(entry)}
-                                >
-                                    <figure>
-                                        <img src={entry.imageSrc} alt="background picture" />
-                                    </figure>
-                                </div>
-                            )
-                        )}
-                    </div>
+                    <HobbiesContent entries={entries}/>
                 </section>
 
             </div>
