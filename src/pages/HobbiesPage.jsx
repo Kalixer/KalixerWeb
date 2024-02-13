@@ -56,10 +56,15 @@ const Books = () => {
         setSectionSelected(!sectionSelected)
         console.log(introSection)
     }
+    function goBack() {
+        setSectionSelected(false)
+        setIntroSection(<IntroSection />)
+    }
 
     const hobbiesContentComponent = <HobbiesContent 
     entries={entries} 
     handleClick={handleClick}
+    
     />
 
     return (
@@ -67,9 +72,11 @@ const Books = () => {
                 {introSection}
                 <section className='content'>
                     <nav className='type-nav'>
-                        {entriesCategory.map((entry) => (
+                        {!sectionSelected ? 
+                            entriesCategory.map((entry) => (
                             <div className='category' onClick={() => selectCategory(entry)}>{entry}</div>    
-                        ))}                        
+                        )) : 
+                            <div className='category' onClick={() => goBack()}>Go back</div>}
                     </nav>
                     {!sectionSelected ? hobbiesContentComponent : <></>}
                 </section>
