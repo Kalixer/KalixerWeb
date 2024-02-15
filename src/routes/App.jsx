@@ -19,6 +19,7 @@ import InDevelopment from "@pages/InDevelopment";
 
 import hideFooter from '@containers/Layout'
 import '@styles/global.css'
+import { HobbieEntry } from "../pages/HobbieEntry";
 
 const App = () => {
     return (
@@ -44,6 +45,8 @@ const App = () => {
                     {/* These are the blogs */}
 
                     <Route exact path="/hobbies" element={<HobbiesPage />} />
+                    <Route exact path="/hobbies/hobbyEntry" element={<HobbieEntry />} />
+
                     <Route exact path="/portfolio" element={<InDevelopment />} />
 					<Route path="*" element={<NotFound/>} />
                 </Routes>
