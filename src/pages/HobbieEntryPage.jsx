@@ -5,7 +5,7 @@ import '@styles/HobbieEntryPage.scss'
 const review = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit fugit, quis consectetur voluptatem ab ratione, earum autem deserunt eaque placeat deleniti mollitia ad quo fuga! Rerum asperiores ducimus dolore?
 Neque quasi voluptas culpa amet consequuntur beatae quis doloribus illo! Accusantium explicabo vero voluptate pariatur commodi rerum ut incidunt numquam itaque asperiores corporis similique maiores, illo natus possimus reprehenderit aperiam?`
 
-function HobbieEntry() {
+function HobbieEntryPage() {
   return (
     <>
         <div className='HobbieEntryPage'>
@@ -30,4 +30,4 @@ function HobbieEntry() {
   )
 }
 
-export {HobbieEntry}
+export { HobbieEntryPage }
