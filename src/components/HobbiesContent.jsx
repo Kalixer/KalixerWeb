@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import '@styles/HobbiesContent.scss'
 
 function HobbiesContent({entries, handleClick}) {
+
   return (
     <>
         <div className='HobbiesContent'>
@@ -14,9 +15,7 @@ function HobbiesContent({entries, handleClick}) {
                     onClick={() => handleClick(entry)}
                     >   
                         <figure>
-                            <Link to='/hobbies/hobbyEntry' >
-                                <img src={entry.imageSrc} alt="background picture" />
-                            </Link>
+                            <img src={entry.imageSrc} alt="background picture" />
                         </figure>
                     </div>
                 )

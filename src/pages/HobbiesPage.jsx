@@ -3,7 +3,10 @@ import { useFooterContext } from '@containers/Layout';
 import IntroSection from '@components/IntroSection';
 import { HobbiesContent } from '@components/HobbiesContent';
 import { HobbieEntry } from '@components/HobbieEntry';
+// import { setHobbieEntry } from '../hooks/setHobbieEntry';
 import '@styles/HobbiesPage.scss';
+import { HobbieEntryPage } from './HobbieEntryPage';
+import scrollToTop from '../utils/scrollToTop';
 
 const bookBackground = 'https://wallpapers.com/images/featured/book-5q6xbfxwtbme5kaj.jpg'
 
@@ -31,21 +34,20 @@ const entriesCategory = allEntries.map((entry) => {
     }
 }).filter(entry => entry !== undefined)
 
-/*
-    Ideas for the next sesion
-
-    onClick
-    1. Modify the whole pag
-    2. Make it responsive
-*/
 
 const Books = () => {
     const [entries, setEntries] = React.useState(allEntries)
     const [introSection, setIntroSection] = React.useState(<IntroSection />)
     const [sectionSelected, setSectionSelected] = React.useState(false)
+    const [entrySelected, setEntrySelected] = React.useState(false)
+    const [hobbieEntry, setHobbieEntry] = React.useState('')
     
     const { setHideFooter } = useFooterContext()
-    setHideFooter(true)
+    
+    React.useEffect(() => {
+        setHideFooter(true)
+    }, [])
+
 
     function selectCategory (categoria) {
         const entriesFiltered = allEntries.filter(entries => entries.category === categoria)
@@ -54,35 +56,45 @@ const Books = () => {
     function handleClick(elemento) {
         setIntroSection(<IntroSection backgroundImg={elemento.imagenBackground}/>)
         setSectionSelected(!sectionSelected)
+        setHobbieEntry(elemento) // Por ahora esto transmite la info de la entrada
+        setEntrySelected(true)
+        scrollToTop()
     }
     function goBack() {
         setSectionSelected(false)
         setIntroSection(<IntroSection />)
     }
 
+    // Componente <HobbiesContent />
     const hobbiesContentComponent = <HobbiesContent 
     entries={entries} 
     handleClick={handleClick}
+    introSection={introSection}
     
     />
 
-    return (
-        <div className='Books'>
-                {introSection}
-                <section className='content'>
-                    <nav className='type-nav'>
-                        {!sectionSelected ? 
-                            // El 'index' es solo para que no salga un warning en la consola, en realidad no existe
-                            entriesCategory.map((entry, index) => (
-                                <div key={index} className='category' onClick={() => selectCategory(entry)}>{entry}</div>    
-                        )) : 
-                                <div className='category' onClick={() => goBack()}>Go back</div>}
-                    </nav>
-                    {!sectionSelected ? hobbiesContentComponent : <HobbieEntry />}
-                </section>
-
-            </div>
-    )   
+    if(!entrySelected) {
+        return (
+            <div className='Books'>
+            {introSection}
+            <section className='content'>
+                <nav className='type-nav'>
+                    {!sectionSelected ? 
+                        // El 'index' es solo para que no salga un warning en la consola, en realidad no existe
+                        entriesCategory.map((entry, index) => (
+                            <div key={index} className='category' onClick={() => selectCategory(entry)}>{entry}</div>    
+                            )) : 
+                            <div className='category' onClick={() => goBack()}>Go back</div>}
+                </nav>
+                {!sectionSelected ? hobbiesContentComponent : <HobbieEntry />}
+            </section>
+    
+        </div>
+    
+        )                           
+    } else {
+        return(<HobbieEntryPage hobbieEntry={hobbieEntry} introSection={introSection}/>)
+    }
 }
 
 export default Books;
