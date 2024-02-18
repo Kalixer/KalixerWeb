@@ -37,6 +37,7 @@ const Books = () => {
     }, [])
 
     const goBackClick = () => {
+        scrollToTop()
         setEntrySelected(false)
         setSectionSelected(false)
         // setIntroSection()
