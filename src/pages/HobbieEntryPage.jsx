@@ -10,7 +10,7 @@ import { hobbieDataBase } from '../utils/hobbieDataBase';
 import { getEntry } from '../utils/getEntry';
 
 
-function HobbieEntryPage({hobbieEntry, goBackClick}) {
+function HobbieEntryPage({hobbieEntry, goBackClick, setIntroSection, introSection}) {
   const [arrow, setArrow] = React.useState(<TiArrowBackOutline />)
 
   const entry = getEntry(hobbieEntry, hobbieDataBase)
@@ -29,10 +29,14 @@ function HobbieEntryPage({hobbieEntry, goBackClick}) {
     setArrow(<TiArrowBackOutline />)
   }
 
+  React.useEffect(() => {
+    setIntroSection(<IntroSection backgroundImg={entry.imageBackground}/>)
+  }, [])
+
   return (
     <>
         <div className='HobbieEntryPage'>
-          <IntroSection backgroundImg={entry.imageBackground}/>
+            {introSection}
             <section className='introduction'>
                 <h1 className='title'>{entry.title}</h1>
                 <p>Description: A great production made by the best writers of stories</p>

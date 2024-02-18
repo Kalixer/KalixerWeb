@@ -39,6 +39,7 @@ const Books = () => {
     const goBackClick = () => {
         setEntrySelected(false)
         setSectionSelected(false)
+        // setIntroSection()
     }
 
 
@@ -86,7 +87,12 @@ const Books = () => {
     
         )                           
     } else {
-        return(<HobbieEntryPage hobbieEntry={hobbieEntry} goBackClick={goBackClick}/>)
+        return(<HobbieEntryPage 
+                hobbieEntry={hobbieEntry} 
+                goBackClick={goBackClick} 
+                setIntroSection={setIntroSection}
+                introSection={introSection}
+                />)
     }
 }
 
