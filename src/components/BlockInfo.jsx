@@ -1,14 +1,14 @@
 import React from 'react'
 import '@styles/BlockInfo.scss'
 
-function BlockInfo({hobbieEntry}) {
+function BlockInfo({entry}) {
     const quote = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, blanditiis nemo. Quia, dolore animi. Accusantium corrupti reprehenderit corporis cum voluptatem! Dolorem recusandae quae nobis veritatis pariatur rerum atque eaque molestias.`
     
     return (
       <div className='BlockInfo'>
         <div className='block-image-container'>
           <figure>
-            <img src={hobbieEntry.imagenBackground} alt="" />
+            <img src={entry.imageBackground} alt="" />
           </figure>
         </div>
         <div className='block-quote'>

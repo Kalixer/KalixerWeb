@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import '@styles/HobbiesContent.scss'
 
 function HobbiesContent({entries, handleClick}) {
-
   return (
     <>
         <div className='HobbiesContent'>
