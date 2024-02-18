@@ -1,0 +1,38 @@
+.BlockInfo {
+    height: 35vh;
+    width: 100vw;
+    border: solid 1px var(--taupe);
+    display: flex;
+    margin: 6rem 0 4rem 0;
+}
+.BlockInfo .block-image-container {
+    width: 50vw;
+}
+.block-image-container figure{
+    width: 50vw;
+    height: 35vh;
+}
+.block-image-container figure img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.BlockInfo .block-quote {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.BlockInfo .block-quote h3 {
+    padding: 0 3rem;
+    font-size: 3.2rem;
+}
+.BlockInfo .block-quote p {
+    padding-left: 3rem;
+    width: 70%;
+    font-size: 1.8rem;
+}
+.BlockInfo .block-quote :nth-child(3) {
+    margin-top: 0;
+    color: grey;
+}
