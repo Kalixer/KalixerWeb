@@ -61,6 +61,32 @@
     padding: 0 2rem;
     max-width: 60vw;
 }
+.HobbieEntryPage .back-button {
+    height: 40px;
+    width: 40px;
+    border: solid 2px grey;
+
+    border-radius: 8px;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HobbieEntryPage .back-button :nth-child(1) {
+    height: 35px;
+    width: 35px;
+    color: grey;
+}
+// .HobbieEntryPage .back-button:hover {
+//     border-color: blue;
+//     color: blue;
+// }
+.HobbieEntryPage .back-button:hover {
+    cursor: pointer;
+}
 .HobbieEntryPage .backgroundStatic {
     height: 3vh;
     width: 100vw;

@@ -48,6 +48,11 @@ const Books = () => {
         setHideFooter(true)
     }, [])
 
+    const goBackClick = () => {
+        setEntrySelected(false)
+        setSectionSelected(false)
+    }
+
 
     function selectCategory (categoria) {
         const entriesFiltered = allEntries.filter(entries => entries.category === categoria)
@@ -93,7 +98,7 @@ const Books = () => {
     
         )                           
     } else {
-        return(<HobbieEntryPage hobbieEntry={hobbieEntry} introSection={introSection}/>)
+        return(<HobbieEntryPage hobbieEntry={hobbieEntry} introSection={introSection} goBackClick={goBackClick}/>)
     }
 }
 

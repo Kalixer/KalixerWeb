@@ -1,14 +1,23 @@
 import React from 'react'
-import IntroSection from '@components/IntroSection'
-// import { setHobbieEntry } from "../hooks/setHobbieEntry";
-
 
 import '@styles/HobbieEntryPage.scss'
 import { BlockInfo } from '../components/BlockInfo'
+import { TiArrowBackOutline } from "react-icons/ti";
 
-function HobbieEntryPage({hobbieEntry, introSection}) {
+function HobbieEntryPage({hobbieEntry, introSection, goBackClick}) {
   const review = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit fugit, quis consectetur voluptatem ab ratione, earum autem deserunt eaque placeat deleniti mollitia ad quo fuga! Rerum asperiores ducimus dolore?
   Neque quasi voluptas culpa amet consequuntur beatae quis doloribus illo! Accusantium explicabo vero voluptate pariatur commodi rerum ut incidunt numquam itaque asperiores corporis similique maiores, illo natus possimus reprehenderit aperiam?`
+
+  const [arrow, setArrow] = React.useState(<TiArrowBackOutline />)
+
+  const overColor = (evento) => {
+    evento.target.style.borderColor = 'blue'
+    setArrow(<TiArrowBackOutline fill='blue'/>)
+  }
+  const overDefault = (evento) => {
+    evento.target.style.borderColor = 'grey'
+    setArrow(<TiArrowBackOutline />)
+  }
 
   return (
     <>
@@ -27,6 +36,9 @@ function HobbieEntryPage({hobbieEntry, introSection}) {
                 <BlockInfo hobbieEntry={hobbieEntry}/>
                 <p>{review} <br /> {review}</p>
             </div>
+              <div className='back-button' onClick={goBackClick} onMouseOver={overColor} onMouseLeave={overDefault}>
+                {arrow}
+              </div>
             <div className='backgroundStatic'></div>
 
         </div>
