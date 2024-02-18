@@ -62,9 +62,42 @@
     max-width: 60vw;
 }
 .HobbieEntryPage .review .blockInfo {
-    height: 30vh;
+    height: 35vh;
     width: 100vw;
     border: solid 1px var(--taupe);
+    display: flex;
+    margin: 6rem 0 4rem 0;
+}
+.HobbieEntryPage .review .blockInfo .block-image-container {
+    width: 50vw;
+}
+.block-image-container figure{
+    width: 50vw;
+    height: 35vh;
+}
+.block-image-container figure img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.blockInfo .block-quote {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.blockInfo .block-quote h3 {
+    padding: 0 3rem;
+    font-size: 3.2rem;
+}
+.blockInfo .block-quote p {
+    padding-left: 3rem;
+    width: 70%;
+    font-size: 1.8rem;
+}
+.blockInfo .block-quote :nth-child(3) {
+    margin-top: 0;
+    color: grey;
 }
 .HobbieEntryPage .backgroundStatic {
     height: 3vh;
