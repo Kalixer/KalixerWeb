@@ -49,3 +49,22 @@
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+@media (max-width: 500px) {
+    .Books .content .type-nav {
+        flex-direction: row;
+        margin-top: 10vh;
+        height: 10vh;
+        width: 100vw;
+        z-index: 1;
+        font-size: 1.4rem;
+        position: static;
+    }
+    .Books .category {
+        height: 40px;
+        font-size: 1.6rem;
+        padding: 0 1rem;
+        margin: 4px;
+    }
+    
+}

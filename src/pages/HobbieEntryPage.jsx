@@ -15,7 +15,6 @@ function HobbieEntryPage({hobbieEntry, goBackClick, setIntroSection, introSectio
 
   // Aquí está toda la información del la entrada
   const entry = getEntry(hobbieEntry, hobbieDataBase)
-  console.log(entry)
 
   const overColor = (evento) => {
     evento.target.style.borderColor = 'blue'

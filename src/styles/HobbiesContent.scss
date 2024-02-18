@@ -52,3 +52,13 @@
     width: 160px;
     position: absolute;
 }
+
+@media (max-width: 500px) {
+    .HobbiesContent {
+        width: auto;
+        margin: 20vh 0;
+        display: flex;
+        align-items: center;
+        justify-self: center;
+    }
+}
