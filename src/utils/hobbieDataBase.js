@@ -1,65 +1,169 @@
 const bookBackground = 'https://wallpapers.com/images/featured/book-5q6xbfxwtbme5kaj.jpg'
 
+/* 
+    Things I need to add to this database
+    A...
+    1. 
+    2. Rate
+    3. Recomendation
+    4. Review
+    5. Picture for the BlockInfo
+    6.  for the quote
+    7. Quote
+    8. Writer
+*/
+
 const hobbieDataBase = [
     {   category: 'Films', 
         title: 'Inception', 
+        description: 'Default description',
+        rate: '7.5 / 10',
+        recomendation: 'I hope you like it',
+        reviewTitle: 'A begining',
+        review: '',
+        imageBlock: '',
+        quoteTitle: '',
+        quoteDescription: '',
+        quoteWriter: '',
         imageSrc: 'https://m.media-amazon.com/images/I/A1eIBPcRUqL._AC_UF894,1000_QL80_.jpg', 
-        imageBackground: 'https://wallpaperswide.com/download/inception_totem-wallpaper-1920x1080.jpg'
+        imageBackground: 'https://wallpaperswide.com/download/inception_totem-wallpaper-1920x1080.jpg',
     },
 
     {   category: 'Films', 
         title: 'Oppenheimer', 
+        description: 'Default description',
+        rate: '7.5 / 10',
+        recomendation: 'I hope you like it',
+        reviewTitle: '',
+        review: '',
+        imageBlock: '',
+        quoteTitle: '',
+        quoteDescription: '',
+        quoteWriter: '',
         imageSrc: 'https://cloudfront-us-east-1.images.arcpublishing.com/copesa/S4367N7H5VAYTB225C4GCG2ZHI.jpeg', 
-        imageBackground: 'https://pixewall.com/wp-content/uploads/2023/07/oppenheimer90930510052-scaled.jpg'
+        imageBackground: 'https://pixewall.com/wp-content/uploads/2023/07/oppenheimer90930510052-scaled.jpg',
     },
 
     {   category: 'Books', 
         title: 'Never Split The Difference',  
-        imageSrc: 'https://images.squarespace-cdn.com/content/v1/5a1ee5b29f07f5ecc278f6c8/1567952731469-P0061DFC7X6K5OBV86JO/Never+Split+The+Difference.jpg', imageBackground: bookBackground
+        description: 'Default description',
+        rate: '7.5 / 10',
+        recomendation: 'I hope you like it',
+        reviewTitle: '',
+        review: '',
+        imageBlock: '',
+        quoteTitle: '',
+        quoteDescription: '',
+        quoteWriter: '',
+        imageSrc: 'https://images.squarespace-cdn.com/content/v1/5a1ee5b29f07f5ecc278f6c8/1567952731469-P0061DFC7X6K5OBV86JO/Never+Split+The+Difference.jpg', 
+        imageBackground: bookBackground,
     },
 
     {   category: 'Books', 
         title: 'Quiet', 
+        description: 'Default description',
+        rate: '7.5 / 10',
+        recomendation: 'I hope you like it',
+        reviewTitle: '',
+        review: '',
+        imageBlock: '',
+        quoteTitle: '',
+        quoteDescription: '',
+        quoteWriter: '',
         imageSrc: 'https://images.booksense.com/images/722/694/9788417694722.jpg', 
-        imageBackground: bookBackground
+        imageBackground: bookBackground,
     },
 
     {   category: 'Series', 
         title: 'SmallVille', 
-         imageSrc: 'https://www.bolsamania.com/seriesadictos/wp-content/uploads/2011/01/00037716.jpg', 
-         imageBackground: 'https://images.alphacoders.com/118/1184862.jpg'
+        description: 'Default description',
+        rate: '7.5 / 10',
+        recomendation: 'I hope you like it',
+        reviewTitle: '',
+        review: '',
+        imageBlock: '',
+        quoteTitle: '',
+        quoteDescription: '',
+        quoteWriter: '',
+        imageSrc: 'https://www.bolsamania.com/seriesadictos/wp-content/uploads/2011/01/00037716.jpg', 
+        imageBackground: 'https://images.alphacoders.com/118/1184862.jpg',
     },
 
     {   category: 'Series', 
         title: 'Clone Wars', 
+        description: 'Default description',
+        rate: '7.5 / 10',
+        recomendation: 'I hope you like it',
+        reviewTitle: '',
+        review: '',
+        imageBlock: '',
+        quoteTitle: '',
+        quoteDescription: '',
+        quoteWriter: '',
         imageSrc: 'https://m.media-amazon.com/images/I/817h8As4D7L.jpg', 
-        imageBackground: 'https://imgs.search.brave.com/DTCBCoRrJ8VqQywtrI1_exJ6TTrqEVqX0SAagDgmfuI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93MC5w/ZWFrcHguY29tL3dh/bGxwYXBlci85MzYv/Ni9IRC13YWxscGFw/ZXItdGhlLWNsb25l/LXdhcnMtc3Rhci13/YXJzLXRoZS1jbG9u/ZS13YXJzLmpwZw'
+        imageBackground: 'https://imgs.search.brave.com/DTCBCoRrJ8VqQywtrI1_exJ6TTrqEVqX0SAagDgmfuI/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93MC5w/ZWFrcHguY29tL3dh/bGxwYXBlci85MzYv/Ni9IRC13YWxscGFw/ZXItdGhlLWNsb25l/LXdhcnMtc3Rhci13/YXJzLXRoZS1jbG9u/ZS13YXJzLmpwZw',
     },
 
     {   category: 'VideoGames', 
         title: 'Forza Motorsport', 
+        description: 'Default description',
+        rate: '7.5 / 10',
+        recomendation: 'I hope you like it',
+        reviewTitle: '',
+        review: '',
+        imageBlock: '',
+        quoteTitle: '',
+        quoteDescription: '',
+        quoteWriter: '',
         imageSrc: 'https://myhotposters.com/cdn/shop/products/mL6943_1024x1024.jpg?v=1697834226', 
-        imageBackground: 'https://images3.alphacoders.com/133/1334079.png'
+        imageBackground: 'https://images3.alphacoders.com/133/1334079.png',
     },
 
     {   category: 'VideoGames', 
         title: 'Forza Horizon 5',  
+        description: 'Default description',
+        rate: '7.5 / 10',
+        recomendation: 'I hope you like it',
+        reviewTitle: '',
+        review: '',
+        imageBlock: '',
+        quoteTitle: '',
+        quoteDescription: '',
+        quoteWriter: '',
         imageSrc: 'https://i.ebayimg.com/images/g/9VoAAOSwaU9hfHFE/s-l1600.jpg', 
-        imageBackground: 'https://i.redd.it/oklr0hxxlu571.png'
+        imageBackground: 'https://i.redd.it/oklr0hxxlu571.png',
     },
 
     {   category: 'VideoGames', 
         title: 'Outer Wilds', 
+        description: 'Default description',
+        rate: '7.5 / 10',
+        recomendation: 'I hope you like it',
+        reviewTitle: '',
+        review: '',
+        imageBlock: '',
+        quoteTitle: '',
+        quoteDescription: '',
+        quoteWriter: '',
         imageSrc: 'https://m.media-amazon.com/images/I/61nDUVM-I3L.jpg', 
-        imageBackground: 'https://preview.redd.it/y1jqr8m0fv531.jpg?width=2580&format=pjpg&auto=webp&s=2f377181d98a5629682394e29c687679a49bfef1'
+        imageBackground: 'https://preview.redd.it/y1jqr8m0fv531.jpg?width=2580&format=pjpg&auto=webp&s=2f377181d98a5629682394e29c687679a49bfef1',
     },
 
     {   category: 'VideoGames', 
         title: 'Escape Academy', 
+        description: 'Default description',
+        rate: '7.5 / 10',
+        recomendation: 'I hope you like it',
+        reviewTitle: '',
+        review: '',
+        imageBlock: '',
+        quoteTitle: '',
+        quoteDescription: '',
+        quoteWriter: '',
         imageSrc: 'https://image.api.playstation.com/vulcan/ap/rnd/202206/2716/LNQM7aIv1GVdyqqtzZ24oa28.png', 
-        imageBackground: 'https://images.alphacoders.com/125/1251036.jpg'
+        imageBackground: 'https://images.alphacoders.com/125/1251036.jpg',
     },
 
 ]
 
-export {hobbieDataBase}
+export { hobbieDataBase }
