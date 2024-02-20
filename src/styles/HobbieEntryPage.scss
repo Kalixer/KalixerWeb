@@ -91,3 +91,20 @@
     height: 3vh;
     width: 100vw;
 }
+
+@media (max-width: 500px) {
+    .HobbieEntryPage .introduction {
+        top: 0;
+        justify-content: unset;
+        height: auto;
+        width: auto;
+        margin-top: 12vh;
+        padding: 0 1rem;
+    }
+    .HobbieEntryPage .introduction .title {
+        font-size: 52px;
+    }
+    .HobbieEntryPage .introduction p {
+        padding: 1rem 0;
+    }
+}
