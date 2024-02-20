@@ -15,13 +15,13 @@ const aboutBoxesArr = [
     {subject: 'blog', image: blog_img, link: '/blog', title: 'Blog', description: `Self-Understanding is quite a challenge, so I try sometimes to write down what I think to decrease my anxiety and record my thoughts`},
 ]
 
-const AboutBoxes = (link) => {
+const AboutBoxes = () => {
     return (
         <div className='AboutBoxes'>
 
             {(aboutBoxesArr.map((box) => (
                 <Link to={box.link} onClick={scrollToTop}>
-                    <div className='box' onClick={() => handleClick(box.link)}>
+                    <div className='box'>
                         <figure>
                             <img src={box.image} alt={box.title} />
                         </figure>
