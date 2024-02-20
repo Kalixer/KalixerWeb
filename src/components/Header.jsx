@@ -77,7 +77,7 @@ const Header = () => {
             >
                 <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/about' onClick={scrollToTop}>About</Link></div>
                 <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/blog' onClick={scrollToTop}>Blog</Link></div>
-                <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/books' onClick={scrollToTop}>Books</Link></div>
+                <div className="bottom-nav-box" onClick={toggleMenu}><Link to='/hobbies' onClick={scrollToTop}>Hobbies</Link></div>
                 <div className="bottom-nav-box" onClick={toggleMenu}><Link to ='/portfolio' onClick={scrollToTop}>Portfolio</Link></div>
                 <div className="bottom-nav-box" onClick={toggleMenu}>Contact</div>
             </div>

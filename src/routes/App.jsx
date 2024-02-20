@@ -17,7 +17,6 @@ import Blog6 from "@blogs/Blog6";
 import BlogTest from "@pages/BlogTest";
 import InDevelopment from "@pages/InDevelopment";
 
-import hideFooter from '@containers/Layout'
 import '@styles/global.css'
 
 const App = () => {
@@ -29,7 +28,7 @@ const App = () => {
                     <Route exact path="/" element={<AboutPage />} />
                     <Route exact path="/about" element={<Home />} />
                     <Route exact path="/blog" element={<BlogPage/>} />
-                    <Route exact path="/blog-test" element={<BlogTest/>} />
+                    {/* <Route exact path="/blog-test" element={<BlogTest/>} /> */}
 
                     {/* experimental */}
                     <Route exact path="/dev" element={<InDevelopment/>}/>
@@ -44,6 +43,7 @@ const App = () => {
                     {/* These are the blogs */}
 
                     <Route exact path="/hobbies" element={<HobbiesPage />} />
+
                     <Route exact path="/portfolio" element={<InDevelopment />} />
 					<Route path="*" element={<NotFound/>} />
                 </Routes>

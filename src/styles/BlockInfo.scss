@@ -1,0 +1,66 @@
+.BlockInfo {
+    height: 35vh;
+    width: 100vw;
+    border: solid 1px var(--taupe);
+    display: flex;
+    margin: 6rem 0 4rem 0;
+}
+.BlockInfo .block-image-container {
+    width: 50vw;
+}
+.block-image-container figure{
+    width: 50vw;
+    height: 35vh;
+}
+.block-image-container figure img{
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+.BlockInfo .block-quote {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.BlockInfo .block-quote h3 {
+    padding: 0 3rem;
+    font-size: 3.2rem;
+}
+.BlockInfo .block-quote p {
+    padding-left: 3rem;
+    margin: 1.6rem 0 1rem 0;
+    width: 70%;
+    font-size: 1.8rem;
+}
+.BlockInfo .block-quote :nth-child(3) {
+    margin-top: 0;
+    color: grey;
+}
+
+@media (max-width: 500px) {
+    .BlockInfo {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+    }
+    .BlockInfo .block-quote {
+        width: 99vw;
+    }
+    .BlockInfo .block-quote h3 {
+        padding: 2rem 5rem 1rem 5rem;
+    }
+    .BlockInfo .block-quote p {
+        padding: 0 5rem 0 5rem;
+    }
+    .BlockInfo .block-quote :nth-child(3) {
+        padding: 0 5rem 2rem 5rem;
+    }
+    .block-image-container figure {
+        width: 99vw;
+    }
+    .block-image-container img {
+        width: 99vw;
+    }
+}

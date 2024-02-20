@@ -1,0 +1,110 @@
+.HobbieEntryPage {
+    // margin: 8vh 0 auto 27vw;
+    height: auto;
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: centr;
+}
+.HobbieEntryPage div:nth-child(1) {
+    position: sticky;
+}
+.HobbieEntryPage .introduction {
+    color: white;
+    height: 100vh;
+    width: 80vw;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin-bottom: 100vh;
+    position: absolute;
+    bottom: 20vh;
+    
+    text-shadow: 0px 0px 40px black;
+    
+}
+.HobbieEntryPage .introduction .title {
+    font-size: 80px;
+    padding: 2.4rem 0 1.2rem 0;
+}
+.HobbieEntryPage .review {
+    min-width: 300px;
+    // margin: 0 20vw;
+    
+    font-size: 1.8rem;
+    // border: solid black 2px;
+    border-radius: 2px;
+    color: black;
+    background-color: var(--white);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.HobbieEntryPage .review h2 {
+    margin: 4rem 0;
+    padding: 0 2rem 1rem 2rem;
+    
+    font-size: 4rem;
+
+    width: 60vw;
+    border-bottom: 2px solid var(--taupe);
+}
+.HobbieEntryPage .review > p {
+    margin: 1.6rem 0;
+    max-width: 60vw;
+    min-width: 285px;
+}
+.HobbieEntryPage .back-button {
+    height: 40px;
+    width: 40px;
+    border: solid 2px grey;
+
+    border-radius: 8px;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HobbieEntryPage .back-button :nth-child(1) {
+    height: 35px;
+    width: 35px;
+    color: grey;
+}
+// .HobbieEntryPage .back-button:hover {
+//     border-color: blue;
+//     color: blue;
+// }
+.HobbieEntryPage .back-button:hover {
+    cursor: pointer;
+}
+.HobbieEntryPage .backgroundStatic {
+    height: 3vh;
+    width: 100vw;
+}
+
+@media (max-width: 500px) {
+    .HobbieEntryPage .introduction {
+        top: 0;
+        justify-content: unset;
+        height: auto;
+        width: auto;
+        margin-top: 12vh;
+        padding: 0 1rem;
+    }
+    .HobbieEntryPage .introduction .title {
+        font-size: 52px;
+    }
+    .HobbieEntryPage .introduction p {
+        padding: 1rem 0;
+    }
+}
