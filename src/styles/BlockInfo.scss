@@ -37,3 +37,29 @@
     margin-top: 0;
     color: grey;
 }
+
+@media (max-width: 500px) {
+    .BlockInfo {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .BlockInfo .block-quote {
+        width: 100vw;
+    }
+    .BlockInfo .block-quote h3 {
+        padding: 2rem 5rem 1rem 5rem;
+    }
+    .BlockInfo .block-quote p {
+        padding: 0 5rem 0 5rem;
+    }
+    .BlockInfo .block-quote :nth-child(3) {
+        padding: 0 5rem 2rem 5rem;
+    }
+    .block-image-container figure {
+        width: 100vw;
+    }
+    .block-image-container img {
+        width: 100vw;
+    }
+}
