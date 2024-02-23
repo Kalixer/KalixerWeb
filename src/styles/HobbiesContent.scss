@@ -29,6 +29,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.2s ease;
 }
 
 .HobbiesContent .content-entry:hover {
@@ -52,7 +53,17 @@
     width: 160px;
     position: absolute;
 }
-
+.HobbiesContent .content-entry .content-data {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.700);;
+    color: white;
+}
 @media (max-width: 500px) {
     .HobbiesContent {
         width: auto;
