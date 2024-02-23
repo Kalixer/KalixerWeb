@@ -9,11 +9,11 @@ function HobbieContentEntry({entry, handleClick}) {
             <h3>{entry.rate}</h3>
         </div>
     )
-    const showData = (data) => {
+    const showData = () => {
         setMouseOver(true)
     }
     const stopShowData = () => {
-        setMouseOver(false)
+        setMouseOver(false);
     }
   return (
     <div
@@ -25,8 +25,10 @@ function HobbieContentEntry({entry, handleClick}) {
         <figure>
             <img src={entry.imageSrc} alt="background picture" />
         </figure>
-        
-        {mouseOver ? entryData : null}
+        <div className={`content-data ${mouseOver ? 'show' : 'hide'}`}>
+            <h1>{entry.title}</h1>
+            <h3>{entry.rate}</h3>
+        </div>
     </div>
   )
 }

@@ -21,10 +21,10 @@
     margin: 28px 16px;
     border: solid 1px white;
     border-radius: 4px;
-
+    
     font-size: 24px;
     color: white;
-
+    
     text-align: center;
     display: flex;
     align-items: center;
@@ -61,9 +61,19 @@
     justify-content: center;
     height: inherit;
     width: inherit;
-    background-color: rgba(0, 0, 0, 0.700);;
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+.HobbiesContent .content-entry .content-data h1 {
+    padding: 10px;
+}
+.HobbiesContent .content-entry .hide{
+    opacity: 0;
+}
+.HobbiesContent .content-entry .show{
+    background-color: rgba(0, 0, 0, 0.700);
     color: white;
 }
+
 @media (max-width: 500px) {
     .HobbiesContent {
         width: auto;
