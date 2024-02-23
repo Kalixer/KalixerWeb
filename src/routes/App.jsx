@@ -12,7 +12,7 @@ import BlogRead from "@pages/BlogRead";
 import InDevelopment from "@pages/InDevelopment";
 
 import '@styles/global.css'
-import { BlogPageTest } from "../blogs/BlogPageTest";
+import { BlogPageTest } from "@components/BlogPageTest";
 
 const App = () => {
     return (
