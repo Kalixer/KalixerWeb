@@ -17,8 +17,8 @@ import { BlogPageTest } from "@components/BlogPageTest";
 const App = () => {
     return (
         <MyContextProvider>
-        {/* <BrowserRouter basename="/Kalixer/"> */}
-        <BrowserRouter basename="/">
+        <BrowserRouter basename="/Kalixer/">
+        {/* <BrowserRouter basename="/"> */}
             <Layout hideFooter={false}>
                 <Routes>
                     <Route exact path="/" element={<AboutPage />} />
