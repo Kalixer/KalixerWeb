@@ -42,10 +42,10 @@ function HobbieEntryPage({hobbieEntry, goBackClick, setIntroSection, introSectio
 
             <div className='review'>
                 <h2>{entry.reviewTitle}</h2>
-                <p>{entry.review} <br /> {entry.review}</p>
+                {entry.review}{entry.review}
                 <BlockInfo entry={entry}/>
-                <p>{entry.review} <br /> {entry.review}</p>
-                <p>{entry.review} <br /> {entry.review}</p>
+                {entry.review}{entry.review}
+                {entry.review}{entry.review}
             </div>
               <div className='back-button' onClick={goBackClick} onMouseOver={overColor} onMouseLeave={overDefault}>
                 {arrow}

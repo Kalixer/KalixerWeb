@@ -1,16 +1,26 @@
+import React from 'react';
+
 const bookBackground = 'https://wallpapers.com/images/featured/book-5q6xbfxwtbme5kaj.jpg'
 
-const reviewDef = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit fugit, quis consectetur voluptatem ab ratione, earum autem deserunt eaque placeat deleniti mollitia ad quo fuga! Rerum asperiores ducimus dolore?
-  Neque quasi voluptas culpa amet consequuntur beatae quis doloribus illo! Accusantium explicabo vero voluptate pariatur commodi rerum ut incidunt numquam itaque asperiores corporis similique maiores, illo natus possimus reprehenderit aperiam?`
+const reviewDef = (<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque velit fugit, quis consectetur voluptatem ab ratione, earum autem deserunt eaque placeat deleniti mollitia ad quo fuga! Rerum asperiores ducimus dolore?
+Neque quasi voluptas culpa amet consequuntur beatae quis doloribus illo! Accusantium explicabo vero voluptate pariatur commodi rerum ut incidunt numquam itaque asperiores corporis similique maiores, illo natus possimus reprehenderit aperiam?</p>)
 
 const hobbieDataBase = [
-    {   category: 'Films', 
-        title: 'Inception', 
+    {   title: 'Inception', 
+        category: 'Films', 
         description: 'A great representation of the question, what could we do if we could control dreams?',
         rate: '9.5 / 10',
         recomendation: 'I hope you like it',
         reviewTitle: 'What if you can bend reality',
         review: reviewDef,
+        // This is the way you will translate your entries
+        reviewPt1: (
+            <>
+                <p>There is <strong>a lot</strong> that I could say here</p>
+                <p></p>
+            </>
+        ),
+        reviewPt2: (<p>I still have a lot that I could say here</p>),
         imageBlock: 'https://imgs.search.brave.com/TshZmlPoN1eqULIM3M21YtRRNKhWUL99gl_REUbdpX8/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMxLnNyY2RuLmNv/bS93b3JkcHJlc3Mv/d3AtY29udGVudC91/cGxvYWRzLzIwMjAv/MDMvSW5jZXB0aW9u/LURvbS1Db2JiLmpw/Zw',
         quoteTitle: 'When the dream becomes your reality',
         quoteDescription: 'A single idea from the human mind can build cities. An idea can transform the world and rewrite all the rules.',
@@ -18,9 +28,8 @@ const hobbieDataBase = [
         imageSrc: 'https://m.media-amazon.com/images/I/A1eIBPcRUqL._AC_UF894,1000_QL80_.jpg', 
         imageBackground: 'https://wallpaperswide.com/download/inception_totem-wallpaper-1920x1080.jpg',
     },
-
-    {   category: 'Films', 
-        title: 'Oppenheimer', 
+    {   title: 'Oppenheimer', 
+        category: 'Films', 
         description: 'The manhattan proyect on the hands of Cristopher Nolan',
         rate: '8.5 / 10',
         recomendation: 'Recomended (history, directing, acting)',
@@ -33,9 +42,8 @@ const hobbieDataBase = [
         imageSrc: 'https://cloudfront-us-east-1.images.arcpublishing.com/copesa/S4367N7H5VAYTB225C4GCG2ZHI.jpeg', 
         imageBackground: 'https://images7.alphacoders.com/131/1314905.jpeg',
     },
-
-    {   category: 'Books', 
-        title: 'Never Split The Difference',  
+    {   title: 'Never Split The Difference',  
+        category: 'Books', 
         description: 'A book about the human nature towards the emotions and how to use it for negotiating',
         rate: '9 / 10',
         recomendation: 'For those who want to improve their lives and negotiate better',
@@ -48,9 +56,8 @@ const hobbieDataBase = [
         imageSrc: 'https://images.squarespace-cdn.com/content/v1/5a1ee5b29f07f5ecc278f6c8/1567952731469-P0061DFC7X6K5OBV86JO/Never+Split+The+Difference.jpg', 
         imageBackground: bookBackground,
     },
-
-    {   category: 'Books', 
-        title: 'Quiet', 
+    {   title: 'Quiet', 
+        category: 'Books', 
         description: `The power of Introverts in a world that can't stop talking`,
         rate: '7.5 / 10',
         recomendation: 'For those who are introvert or if you want to know more about Introversion',
@@ -63,9 +70,8 @@ const hobbieDataBase = [
         imageSrc: 'https://images.booksense.com/images/722/694/9788417694722.jpg', 
         imageBackground: bookBackground,
     },
-
-    {   category: 'Series', 
-        title: 'SmallVille', 
+    {   title: 'SmallVille', 
+        category: 'Series', 
         description: 'Backstory of the iconic hero, allies and villains',
         rate: '7.5 / 10',
         recomendation: `Fan or not fan of DC, if you want to know more of the lore, you'll like this`,
@@ -78,9 +84,8 @@ const hobbieDataBase = [
         imageSrc: 'https://www.bolsamania.com/seriesadictos/wp-content/uploads/2011/01/00037716.jpg', 
         imageBackground: 'https://images.alphacoders.com/118/1184862.jpg',
     },
-
-    {   category: 'Series', 
-        title: 'Clone Wars', 
+    {   title: 'Clone Wars', 
+        category: 'Series', 
         description: '3 years of clone wars equals a pool of lore for the fans that enrich the saga overall',
         rate: '8.5 / 10',
         recomendation: `Unless you're a real fan of the saga, maybe you won't watch 160 episodes`,
@@ -93,9 +98,8 @@ const hobbieDataBase = [
         imageSrc: 'https://m.media-amazon.com/images/I/817h8As4D7L.jpg', 
         imageBackground: 'https://lumiere-a.akamaihd.net/v1/images/clone-wars-chronological-order-ahsoka_tall_6768d628.jpeg?region=0,0,1536,864',
     },
-
-    {   category: 'VideoGames', 
-        title: 'Forza Motorsport', 
+    {   title: 'Forza Motorsport', 
+        category: 'VideoGames', 
         description: 'Default description',
         rate: '8 / 10',
         recomendation: 'Not arcade, for those who want to feel what real racing is',
@@ -108,9 +112,8 @@ const hobbieDataBase = [
         imageSrc: 'https://myhotposters.com/cdn/shop/products/mL6943_1024x1024.jpg?v=1697834226', 
         imageBackground: 'https://images3.alphacoders.com/133/1334079.png',
     },
-
-    {   category: 'VideoGames', 
-        title: 'Forza Horizon 5',  
+    {   title: 'Forza Horizon 5',  
+        category: 'VideoGames', 
         description: `Arcade racing game that does'nt shay away when you want to simulate more`,
         rate: '9.5 / 10',
         recomendation: 'Absolutely, for the whole family and motor fans',
@@ -123,9 +126,8 @@ const hobbieDataBase = [
         imageSrc: 'https://i.ebayimg.com/images/g/9VoAAOSwaU9hfHFE/s-l1600.jpg', 
         imageBackground: 'https://i.redd.it/oklr0hxxlu571.png',
     },
-
-    {   category: 'VideoGames', 
-        title: 'Outer Wilds', 
+    {   title: 'Outer Wilds', 
+        category: 'VideoGames', 
         description: 'You, Space, Exploration',
         rate: '9.5 / 10',
         recomendation: 'Not for everyone, this is for someone that is curious and wants to unravel misteries',
@@ -138,9 +140,8 @@ const hobbieDataBase = [
         imageSrc: 'https://m.media-amazon.com/images/I/61nDUVM-I3L.jpg', 
         imageBackground: 'https://preview.redd.it/y1jqr8m0fv531.jpg?width=2580&format=pjpg&auto=webp&s=2f377181d98a5629682394e29c687679a49bfef1',
     },
-
-    {   category: 'VideoGames', 
-        title: 'Escape Academy', 
+    {   title: 'Escape Academy', 
+        category: 'VideoGames', 
         description: 'A game about escaping, the only tool you have is your mind',
         rate: '8 / 10',
         recomendation: 'If you want take pleasure on solving problems',
