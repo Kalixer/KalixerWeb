@@ -1,14 +1,14 @@
-.Books .IntroSection {
+.HobbiesPage .IntroSection {
     position: fixed;
 }
-.Books .content {
+.HobbiesPage .content {
     // position: relative;
     height: 100vh;
     // border: solid green 1px;
 
     display: flex;
 }
-.Books .type-nav {
+.HobbiesPage .type-nav {
     // border: solid yellow 1px;
     height: 92vh;
     width: 28vw;
@@ -22,7 +22,7 @@
     position: fixed;
     top: 0;
 }
-.Books .category {
+.HobbiesPage .category {
     height: auto;
     color: white;
     height: 100px;
@@ -43,7 +43,7 @@
     transition: background-color 0.2s ease;
 
 }
-.Books .category:hover {
+.HobbiesPage .category:hover {
     color: var(--taupe);
     border-color: var(--taupe);
     cursor: pointer;
@@ -51,7 +51,7 @@
 }
 
 @media (max-width: 500px) {
-    .Books .content .type-nav {
+    .HobbiesPage .content .type-nav {
         flex-direction: row;
         margin-top: 10vh;
         height: 10vh;
@@ -60,7 +60,7 @@
         font-size: 1.4rem;
         position: static;
     }
-    .Books .category {
+    .HobbiesPage .category {
         height: 40px;
         font-size: 1.6rem;
         padding: 0 1rem;
