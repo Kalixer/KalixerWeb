@@ -23,7 +23,7 @@ const entriesCategory = allEntries.map((entry) => {
 }).filter(entry => entry !== undefined)
 
 
-const Books = () => {
+const HobbiesPage = () => {
     const [entries, setEntries] = React.useState(allEntries)
     const [introSection, setIntroSection] = React.useState(<IntroSection />)
     const [sectionSelected, setSectionSelected] = React.useState(false)
@@ -70,7 +70,7 @@ const Books = () => {
 
     if(!entrySelected) {
         return (
-            <div className='Books'>
+            <div className='HobbiesPage'>
             {introSection}
             <section className='content'>
                 <nav className='type-nav'>
@@ -97,4 +97,4 @@ const Books = () => {
     }
 }
 
-export default Books;
+export default HobbiesPage;

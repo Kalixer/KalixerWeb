@@ -31,7 +31,7 @@ const hobbieDataBase = [
         quoteDescription: 'We knew the world would not be the same. A few people laughed, a few people cried, most people were silent. I remembered the line from the Hindu scripture, the Bhagavad-Gita. [...], “Now, I am become Death, the destroyer of worlds.” I suppose we all thought that one way or another.',
         quoteWriter: 'J. Robert Oppenheimer',
         imageSrc: 'https://cloudfront-us-east-1.images.arcpublishing.com/copesa/S4367N7H5VAYTB225C4GCG2ZHI.jpeg', 
-        imageBackground: 'https://pixewall.com/wp-content/uploads/2023/07/oppenheimer90930510052-scaled.jpg',
+        imageBackground: 'https://images7.alphacoders.com/131/1314905.jpeg',
     },
 
     {   category: 'Books', 
