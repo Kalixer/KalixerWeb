@@ -13,16 +13,18 @@ import Blog3 from "@blogs/Blog3";
 import Blog4 from "@blogs/Blog4";
 import Blog5 from "@blogs/Blog5";
 import Blog6 from "@blogs/Blog6";
-
+import { MyContextProvider } from "../hooks/useContext";
 import BlogTest from "@pages/BlogTest";
 import InDevelopment from "@pages/InDevelopment";
 
 import '@styles/global.css'
+import { BlogPageTest } from "../blogs/BlogPageTest";
 
 const App = () => {
     return (
-        // <BrowserRouter basename="/">
-        <BrowserRouter basename="/Kalixer/">
+        <MyContextProvider>
+        {/* <BrowserRouter basename="/Kalixer/"> */}
+        <BrowserRouter basename="/">
             <Layout hideFooter={false}>
                 <Routes>
                     <Route exact path="/" element={<AboutPage />} />
@@ -40,6 +42,9 @@ const App = () => {
                     <Route exact path="/blog4" element={<Blog4 />} />
                     <Route exact path="/blog5" element={<Blog5 />} />
                     <Route exact path="/blog6" element={<Blog6 />} />
+                    <Route exact path="/blog6" element={<Blog6 />} />
+                    <Route exact path="/blogPageTest" element={<BlogPageTest />} />
+                    <Route exact path="/blogTest" element={<BlogTest />} />
                     {/* These are the blogs */}
 
                     <Route exact path="/hobbies" element={<HobbiesPage />} />
@@ -49,6 +54,7 @@ const App = () => {
                 </Routes>
             </Layout>
         </BrowserRouter>
+        </MyContextProvider>
     );
 }
 

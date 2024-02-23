@@ -1,7 +1,7 @@
 import React from 'react';
 import IntroSection from '@components/IntroSection';
 import BlogEntries from '@components/BlogEntries';
-
+import { BlogProvider } from '../hooks/useContext';
 import '@styles/BlogPage.scss';
 
 const blogDescription = `Unraveling the labyrinth of an Introvert's mind`
@@ -26,6 +26,7 @@ const BlogPage = () => {
                     {introEx}
                 </div>
                 <BlogEntries/>
+                {/* <BlogPageTest/> */}
             </section>
         </div>
     )   

@@ -6,9 +6,9 @@ import '@styles/BlogPage.scss';
 
 const blogDescription = `Unraveling the labyrinth of an Introverts mind`
 
-const introEx = `<p className='p-intro'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam optio molestias fugiat temporibus laborum, distinctio, est error, sit deserunt libero fugit porro cum reiciendis ducimus numquam accusamus. Dicta, quas similique.</p>`
 
-const BlogPage = () => {
+const BlogPageTest = () => {
+    // const introEx = `<p className='p-intro'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam optio molestias fugiat temporibus laborum, distinctio, est error, sit deserunt libero fugit porro cum reiciendis ducimus numquam accusamus. Dicta, quas similique.</p>`
     return (
         <div className='BlogPage'>
             <IntroSection/>
@@ -19,7 +19,8 @@ const BlogPage = () => {
             </div>
             <section className='content'>
                 <div className='intro'>
-                    {introEx*6} 
+                    {/* {introEx*6}  */}
+                    texto
                 </div>
                 <BlogEntries/>
             </section>
@@ -27,4 +28,4 @@ const BlogPage = () => {
     )   
 }
 
-export default BlogPage;
+export { BlogPageTest };

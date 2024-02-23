@@ -33,11 +33,13 @@ const MoreRead = (props) => {
                 title={blogData[randomBlog1].title}
                 image={blogData[randomBlog1].image}
                 link={blogData[randomBlog1].link}
+                index={randomBlog1}
                 />
                 <BlogEntry
                 title={blogData[randomBlog2].title}
                 image={blogData[randomBlog2].image}
                 link={blogData[randomBlog2].link}
+                index={randomBlog2}
                 />
             </div>
         </div>
