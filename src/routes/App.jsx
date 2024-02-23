@@ -7,14 +7,8 @@ import AboutPage from "@pages/AboutPage";
 import BlogPage from "@pages/BlogPage";
 import HobbiesPage from "@pages/HobbiesPage";
 import PortfolioPage from "@pages/PortfolioPage";
-import Blog1 from "@blogs/Blog1";
-import Blog2 from "@blogs/Blog2";
-import Blog3 from "@blogs/Blog3";
-import Blog4 from "@blogs/Blog4";
-import Blog5 from "@blogs/Blog5";
-import Blog6 from "@blogs/Blog6";
 import { MyContextProvider } from "../hooks/useContext";
-import BlogTest from "@pages/BlogTest";
+import BlogRead from "@pages/BlogRead";
 import InDevelopment from "@pages/InDevelopment";
 
 import '@styles/global.css'
@@ -30,21 +24,14 @@ const App = () => {
                     <Route exact path="/" element={<AboutPage />} />
                     <Route exact path="/about" element={<Home />} />
                     <Route exact path="/blog" element={<BlogPage/>} />
-                    {/* <Route exact path="/blog-test" element={<BlogTest/>} /> */}
+                    {/* <Route exact path="/blog-test" element={<BlogRead/>} /> */}
 
                     {/* experimental */}
                     <Route exact path="/dev" element={<InDevelopment/>}/>
 
                     {/* These are the blogs */}
-                    <Route exact path="/blog1" element={<Blog1 />} />
-                    <Route exact path="/blog2" element={<Blog2 />} />
-                    <Route exact path="/blog3" element={<Blog3 />} />
-                    <Route exact path="/blog4" element={<Blog4 />} />
-                    <Route exact path="/blog5" element={<Blog5 />} />
-                    <Route exact path="/blog6" element={<Blog6 />} />
-                    <Route exact path="/blog6" element={<Blog6 />} />
                     <Route exact path="/blogPageTest" element={<BlogPageTest />} />
-                    <Route exact path="/blogTest" element={<BlogTest />} />
+                    <Route exact path="/blogRead" element={<BlogRead />} />
                     {/* These are the blogs */}
 
                     <Route exact path="/hobbies" element={<HobbiesPage />} />

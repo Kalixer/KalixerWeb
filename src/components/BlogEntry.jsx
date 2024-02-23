@@ -10,8 +10,6 @@ const loremTest = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
 const Entry = (props) => {
     const { setBlogIndex } = React.useContext(MyContext)
 
-	let link = `/${props.link}`
-
 	const showIndex = () => {
 		setBlogIndex(props.index)
 	}
@@ -19,7 +17,7 @@ const Entry = (props) => {
 	return (
 		<div className='BlogEntry' onClick={showIndex}>
 			{/* <Link to={link} onClick={scrollToTop}> */}
-			<Link to='/blogTest' onClick={scrollToTop}>
+			<Link to='/blogRead' onClick={scrollToTop}>
 				<figure className='imagen'>
 					<img src={props.image} alt="" />
 				</figure>

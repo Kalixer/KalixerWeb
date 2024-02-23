@@ -1,4 +1,4 @@
-.BlogTest {
+.BlogRead {
     height: auto;
 
     display: flex;
@@ -6,7 +6,7 @@
     align-items: center;
     padding-bottom: 5rem;
 }
-.BlogTest .BlogImage{
+.BlogRead .BlogImage{
     height: 500px;
     width: auto;
     filter: brightness(60%);
@@ -18,7 +18,7 @@
     object-fit: cover;
 }
 
-.BlogTest .Title {
+.BlogRead .Title {
     border-bottom: solid 1px rgb(180, 180, 180);
 
     width: 50vw;
@@ -29,7 +29,7 @@
     display: flex;
     flex-direction: start;
 }
-.BlogTest .blog-content {
+.BlogRead .blog-content {
     padding-top: 4rem;
 
     height: auto;
@@ -47,10 +47,10 @@
 }
 
 @media (max-width: 450px) {
-    .BlogTest .Title{
+    .BlogRead .Title{
         width: 70vw;
     }
-    .BlogTest .blog-content {
+    .BlogRead .blog-content {
         width: 80vw;
     }
 }

@@ -3,15 +3,15 @@ import blogData from '@utils/blogData';
 import MoreRead from '@components/MoreRead';
 import { MyContext } from '../hooks/useContext';
 
-import '@styles/BlogTest.scss';
+import '@styles/BlogRead.scss';
 
 const text1 = `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur eum optio, at non voluptate hic voluptates deleniti obcaecati harum. Qui eius voluptate, nemo voluptatum soluta sed praesentium iure maiores quibusdam!`
 
-const BlogTest = () => {
+const BlogRead = () => {
     const {blogIndex} = React.useContext(MyContext)
 
     return (
-        <div className='BlogTest'>
+        <div className='BlogRead'>
             <figure className='BlogImage'>
                 <img src={blogData[blogIndex].image} alt="" />
             </figure>
@@ -31,4 +31,4 @@ const BlogTest = () => {
     )
 }
 
-export default BlogTest;
+export default BlogRead;
