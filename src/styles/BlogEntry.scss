@@ -50,7 +50,9 @@
 
 @media (max-width: 430px) {
     .BlogEntry{
-        max-width: 90vw;
+        width: 100%;
+        padding: 0;
+        margin: 2rem 0;
     }
     .BlogEntry .imagen {
         height: 100%;
