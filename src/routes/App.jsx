@@ -17,7 +17,7 @@ import { BlogPageTest } from "@components/BlogPageTest";
 const App = () => {
     return (
         <MyContextProvider>
-        <BrowserRouter basename="/Kalixer/">
+        <BrowserRouter basename="/KalixerWeb/">
         {/* <BrowserRouter basename="/"> */}
             <Layout hideFooter={false}>
                 <Routes>
