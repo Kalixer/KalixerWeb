@@ -45,7 +45,7 @@ const hobbieDataBase = [
     {   title: 'Never Split The Difference',  
         category: 'Books', 
         description: 'A book about the human nature towards the emotions and how to use it for negotiating',
-        rate: '9 / 10',
+        rate: '9.5 / 10',
         recomendation: 'For those who want to improve their lives and negotiate better',
         reviewTitle: 'Your life depends on negociate',
         review: reviewDef,
